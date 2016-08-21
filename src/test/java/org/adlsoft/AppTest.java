@@ -3,12 +3,9 @@ package org.adlsoft;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
-
 import org.junit.*;
-
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -27,14 +24,33 @@ public class AppTest {
     }
 
     @Test
-    public void test1111() throws Exception {
+    public void testAppTest() throws Exception {
+
         driver.get(baseUrl + "/mfc_hmao/admin/");
+        //driver.findElement(By.name("login")).clear();
+        driver.findElement(By.name("login")).sendKeys("AvhimkovDL");
+        driver.findElement(By.name("password")).sendKeys("Lvbnhbq");
+        driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
         // ERROR: Caught exception [ERROR: Unsupported command [selectFrame | nav | ]]
         driver.findElement(By.id("plus10358393@SXFolder")).click();
         driver.findElement(By.linkText("Сотрудники")).click();
         // ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=toolbar | ]]
         driver.findElement(By.cssSelector("td.menu_over > button.tm")).click();
         // ERROR: Caught exception [ERROR: Unsupported command [waitForPopUp | _blank | 30000]]
+        driver.get(baseUrl + "/mfc_hmao/admin/create.htm?id=11478361@SXFolder&cls=mfcUser&ra=members&ds=default&link=11478361@SXFolder&4ee81ab52eb8829b2b585fd95907bc67");
+
+        driver.findElement(By.id("id_surname")).sendKeys("Авхимко");
+        driver.findElement(By.id("id_name")).sendKeys("Дмитрий");
+        driver.findElement(By.id("id_patronymic")).sendKeys("Леонидович");
+        driver.findElement(By.id("id_login")).sendKeys("AvhimkovDL");
+        driver.findElement(By.name("data(password)")).sendKeys("qwe123qwe");
+        driver.findElement(By.name("data(repassword)")).sendKeys("qwe123qwe");
+        new Select(driver.findElement(By.id("id_mfc"))).selectByVisibleText("Муниципальное казенное учреждение \"Многофункциональный центр предоставления государственных и муниципальных услуг г. Лянтор Сургутского района\"");
+        driver.findElement(By.id("formSubmit")).click();
+        //driver.findElement(By.id("title_operator")).click();
+        //driver.findElement(By.id("title_controller")).click();
+        //driver.findElement(By.id("title_docved")).click();
+        driver.findElement(By.id("title_esia")).click();
     }
 
     @After
