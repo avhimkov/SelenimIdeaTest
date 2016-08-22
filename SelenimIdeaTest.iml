@@ -44,5 +44,6 @@
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:jetty-repacked:7.6.1" level="project" />
     <orderEntry type="library" name="Maven: net.jcip:jcip-annotations:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.8" level="project" />
+    <orderEntry type="library" name="client-combined-3.0.0-beta2-nodeps" level="project" />
   </component>
 </module>
