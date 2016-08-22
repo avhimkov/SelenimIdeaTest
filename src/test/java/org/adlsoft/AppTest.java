@@ -1,6 +1,7 @@
 package org.adlsoft;
 
 
+import java.util.Scanner;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.junit.*;
@@ -15,6 +16,8 @@ public class AppTest {
     private String baseUrl;
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
+//    public String pass;
+//    public String logen;
 
     @Before
     public void setUp() throws Exception {
@@ -26,10 +29,18 @@ public class AppTest {
     @Test
     public void testAppTest() throws Exception {
 
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите логин: ");
+        String login = in.nextLine();
+        System.out.print("Введите пароль: ");
+        String pass = in.nextLine();
+
+
+
         driver.get(baseUrl + "/mfc_hmao/admin/");
         //driver.findElement(By.name("login")).clear();
-        driver.findElement(By.name("login")).sendKeys("AvhimkovDL");
-        driver.findElement(By.name("password")).sendKeys("Lvbnhbq");
+        driver.findElement(By.name("login")).sendKeys(login);
+        driver.findElement(By.name("password")).sendKeys(pass);
         driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
         // ERROR: Caught exception [ERROR: Unsupported command [selectFrame | nav | ]]
         driver.findElement(By.id("plus10358393@SXFolder")).click();
