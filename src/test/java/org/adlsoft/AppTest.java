@@ -21,14 +21,18 @@ public class AppTest {
 
     @Before
     public void setUp() throws Exception {
+        System.setProperty("webdriver.firefox.marionette","D:\\doc\\FirefoxDriver\\geckodriver.exe");
+        System.setProperty("webdriver.firefox.bin", "C:\\Program Files\\Mozilla Firefox\\firefox.exe");
         driver = new FirefoxDriver();
         baseUrl = "http://148.251.88.9:8080/";
+        driver.get(baseUrl + "mfc_hmao/admin/");
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
     @Test
     public void testAppTest() throws Exception {
 
+        System.setProperty("webdriver.firefox.marionette","D:\\doc\\FirefoxDriver\\geckodriver.exe");
         Scanner in = new Scanner(System.in);
         System.out.print("Введите логин: ");
         String login = in.nextLine();
@@ -39,8 +43,8 @@ public class AppTest {
 
         driver.get(baseUrl + "/mfc_hmao/admin/");
         //driver.findElement(By.name("login")).clear();
-        driver.findElement(By.name("login")).sendKeys(login);
-        driver.findElement(By.name("password")).sendKeys(pass);
+        driver.findElement(By.name("login")).sendKeys("login");
+        driver.findElement(By.name("password")).sendKeys("pass");
         driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
         // ERROR: Caught exception [ERROR: Unsupported command [selectFrame | nav | ]]
         driver.findElement(By.id("plus10358393@SXFolder")).click();
