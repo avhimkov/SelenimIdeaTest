@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 public class SistematicaCreateUsers {
     private WebDriver driver;
     private String baseUrl;
-    public String login = "";
+    public String login = "AvhimkovDL";
     public String pass = "";
 
     public String id_surname = "Авхимко";

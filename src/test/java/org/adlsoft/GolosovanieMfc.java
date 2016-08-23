@@ -1,10 +1,11 @@
 package org.adlsoft;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.util.Scanner;
+import java.io.*;
+
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
+
+import com.google.common.io.Files;
 import org.junit.*;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
@@ -12,28 +13,30 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
 
-
 import java.util.concurrent.TimeUnit;
 
 public class GolosovanieMfc {
-
+//    private static final String FILENAME = "C:\\1.txt";
     private WebDriver driver;
-    private String baseUrl;
-    public String numderDela = "111111111";
-    public String codAutantif = "11111";
+//    private String baseUrl;
+    public String numderDela = "21212121"; //111111111
+    public String codAutantif = "32323"; //11111
 
-    public String NumderDelta()throws FileNotFoundException {
-        Scanner in = new Scanner(new FileReader("file.txt"));
-        String numderDela = "";
-        while(in.hasNext())
-        {
-            numderDela = in.next();
-        }
-        return numderDela;
-    }
+
+
+//    public String ReturnNumberDela() throws IOException {
+//        BufferedReader in = new BufferedReader(new FileReader(FILENAME));
+//        String line;
+//        String numderDela = "";
+//        while ((line = in.readLine()) != null) {
+//            line = numderDela;
+//        }
+//        in.close();
+//        return numderDela;
+//    }
 
     @Before
-    public void logPass()  {
+    public void logPass(){
 
         //baseUrl = "http://mfc.admhmao.ru/";
     }
