@@ -20,8 +20,8 @@ public class ChromeCase {
 
     @Test
     public void testCase() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "D:\\doc\\DriverBrowser\\chromedriver_win32\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.bin", "C:\\Users\\adl\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\DriverBrowser\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://148.251.88.9:8080/mfc_hmao/admin/");
 
@@ -31,11 +31,17 @@ public class ChromeCase {
         driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
         //Form create user
         driver.get(baseUrl + "create.htm?id=11478361@SXFolder&cls=mfcUser&ra=members&ds=default&link=11478361@SXFolder&7ca8a1c17f9e33d2ec6b498540532cfc");
+        driver.findElement(By.name("fileNumber")).clear();
         driver.findElement(By.id("id_surname")).sendKeys("Авхимко");
+        driver.findElement(By.name("fileNumber")).clear();
         driver.findElement(By.id("id_name")).sendKeys("Дмитрий");
+        driver.findElement(By.name("fileNumber")).clear();
         driver.findElement(By.id("id_patronymic")).sendKeys("Леонидович");
+        driver.findElement(By.name("fileNumber")).clear();
         driver.findElement(By.id("id_login")).sendKeys("AvhimkovDL");
+        driver.findElement(By.name("fileNumber")).clear();
         driver.findElement(By.name("data(password)")).sendKeys("qwe123qwe");
+        driver.findElement(By.name("fileNumber")).clear();
         driver.findElement(By.name("data(repassword)")).sendKeys("qwe123qwe");
         new Select(driver.findElement(By.id("id_mfc"))).selectByVisibleText("Муниципальное казенное учреждение \"Многофункциональный центр предоставления государственных и муниципальных услуг г. Лянтор Сургутского района\"");
         driver.findElement(By.id("formSubmit")).click();
