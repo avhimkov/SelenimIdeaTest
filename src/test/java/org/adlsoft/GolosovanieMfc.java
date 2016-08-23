@@ -7,36 +7,70 @@ import java.util.concurrent.TimeUnit;
 
 import com.google.common.io.Files;
 import org.junit.*;
+
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.concurrent.TimeUnit;
+import java.lang.*;
+import com.csvreader.CsvReader;
 
-public class GolosovanieMfc {
-//    private static final String FILENAME = "C:\\1.txt";
+
+
+
+
+public class GolosovanieMfc{
+    //    private static final String FILENAME = "C:\\1.txt";
     private WebDriver driver;
-//    private String baseUrl;
+    //    private String baseUrl;
     public String numderDela = "21212121"; //111111111
     public String codAutantif = "32323"; //11111
 
+/* ================================================================ */
+    private String login() {
+    String csvFile = "D:\\Golos.csv";
+    String line = "";
+    final String cvsSplitBy = ";";
+    BufferedReader br = null;
+
+        try {
+
+            br = new BufferedReader(new FileReader(csvFile));
+            while ((line = br.readLine()) != null) {
+
+                // use comma as separator
+                String[] code = line.split(cvsSplitBy);
+
+                codAutantif = code[4];
+            }
 
 
-//    public String ReturnNumberDela() throws IOException {
-//        BufferedReader in = new BufferedReader(new FileReader(FILENAME));
-//        String line;
-//        String numderDela = "";
-//        while ((line = in.readLine()) != null) {
-//            line = numderDela;
-//        }
-//        in.close();
-//        return numderDela;
-//    }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        return codAutantif;
+    }
+
+
+/* ================================================================ */
 
     @Before
-    public void logPass(){
+    public void logPass() {
 
         //baseUrl = "http://mfc.admhmao.ru/";
     }
