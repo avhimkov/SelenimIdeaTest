@@ -12,6 +12,8 @@ import org.openqa.selenium.support.ui.Select;
 public class ChromeCase {
     private WebDriver driver;
     private String baseUrl;
+    public String pass;
+    public String login;
 
     @Before
     public void logPass(){

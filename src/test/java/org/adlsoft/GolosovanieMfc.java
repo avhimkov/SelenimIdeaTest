@@ -16,6 +16,8 @@ public class GolosovanieMfc {
 
     private WebDriver driver;
     private String baseUrl;
+    public String numderDela;
+    public String codAutantif;
 
     @Before
     public void logPass(){
