@@ -16,9 +16,6 @@ public class SearshDelo {
 
         @Before
         public void setUp() throws Exception {
-            driver = new FirefoxDriver();
-            baseUrl = "http://148.251.88.9:8080/mfc_hmao/admin/";
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         }
 
         @Test
@@ -27,7 +24,7 @@ public class SearshDelo {
             System.setProperty("webdriver.chrome.driver", "D:\\DriverBrowser\\chromedriver_win32\\chromedriver.exe");
             System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
             driver = new ChromeDriver();
-            driver.get(baseUrl + "/mfc_hmao/admin/");
+            driver.get("http://148.251.88.9:8080/mfc_hmao/admin/");
             driver.findElement(By.name("login")).clear();
             driver.findElement(By.name("login")).sendKeys("Samosadova");
             driver.findElement(By.name("password")).clear();
@@ -35,7 +32,7 @@ public class SearshDelo {
             driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
             // ERROR: Caught exception [ERROR: Unsupported command [selectFrame | list | ]]
             driver.findElement(By.id("title_iSurname")).click();
-            driver.findElement(By.id("title_iSurname")).clear();
+//            driver.findElement(By.id("title_iSurname")).clear();
             driver.findElement(By.id("title_iSurname")).sendKeys("Абубакиров");
             driver.findElement(By.cssSelector("input.button_green")).click();
             driver.findElement(By.cssSelector("button.tm")).click();
