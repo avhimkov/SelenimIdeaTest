@@ -18,7 +18,7 @@ public class GolosovanieMfcFree {
 
     @Before
     public void logPass() {
-        //baseUrl = "http://mfc.admhmao.ru/";
+
     }
 
     @Test
