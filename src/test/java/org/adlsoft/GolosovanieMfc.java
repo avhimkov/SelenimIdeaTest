@@ -5,11 +5,16 @@ import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import java.lang.*;
-import java.security.Key;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.StringTokenizer;
 
 public class GolosovanieMfc{
+
+    //        String numderDela; //111111111
+    //        String codAutantif; //11111
+
+
 
     @Before
     public void logPass() {
@@ -18,32 +23,31 @@ public class GolosovanieMfc{
 
     @Test
     public void testCase() throws InterruptedException, IOException {
-        WebDriver driver;
-//        String numderDela; //111111111
-//        String codAutantif; //11111
-        String csvFile = "D:\\Golos.csv";
-        String line = null;
-        final String cvsSplitBy = ";";
-        BufferedReader br = null;
+         WebDriver driver;
+         String csvFile = "D:\\Golos.csv";
+         String line = "";
+         StringTokenizer tokens = null;
+         String cvsSplitBy = ";";
+         BufferedReader reader = null;
 
-        br = new BufferedReader(new FileReader(csvFile));
-        HashMap<String,String> map = new HashMap<String, String>();
-        while((line=br.readLine())!=null) {
+        reader = new BufferedReader(new FileReader(csvFile));
+        Map<String, String> map = new HashMap<>();
+        while((line=reader.readLine())!=null) {
             String str[] = line.split(";");
-            for (Map.Entry entry : map.entrySet()) {
-                String key = (String) entry.getKey();
-                String value = (String) entry.getValue();
+            if (str.length > 1) {
+                map.put(str[0].trim(), str[1]);
+            }
 
                 // use comma as separator
                 String[] code = line.split(cvsSplitBy);
-                System.setProperty("webdriver.chrome.driver", "D:\\DriverBrowser\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "D:\\DriverBrowser\\chromedriver_win32\\chromedriver.exe");
                 System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
                 driver = new ChromeDriver();
                 driver.get("http://mfc.admhmao.ru/mfctablet/quality.htm");
                 driver.findElement(By.name("fileNumber")).clear();
-                driver.findElement(By.name("fileNumber")).sendKeys(key);
+                driver.findElement(By.name("fileNumber")).sendKeys(map.get(1));
                 driver.findElement(By.name("authCode")).clear();
-                driver.findElement(By.name("authCode")).sendKeys(value);
+                driver.findElement(By.name("authCode")).sendKeys(map.get(4));
                 driver.findElement(By.xpath("//button[@type='button']")).click();
 
                 Thread.sleep(5000);  // Let the user actually see something!
@@ -54,4 +58,3 @@ public class GolosovanieMfc{
         }
     }
 
-}
