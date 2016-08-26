@@ -25,7 +25,6 @@ public class SearshDelo {
 
             driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
             driver.findElement(By.id("title_iSurname")).click();
-//            driver.findElement(By.id("title_iSurname")).clear();
             driver.findElement(By.id("title_iSurname")).sendKeys("Абубакиров");
             driver.findElement(By.cssSelector("input.button_green")).click();
             driver.findElement(By.cssSelector("button.tm")).click();
