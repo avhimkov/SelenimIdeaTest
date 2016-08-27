@@ -34,43 +34,44 @@ public class SistematicaCreateUsers {
     @Test
     public void testCase() throws InterruptedException, IOException {
         WebDriver driver = new ChromeDriver();
-
+        System.setProperty("webdriver.chrome.driver", "D:\\DriverBrowser\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
         driver.get("http://148.251.88.9:8080/mfc_hmao/admin/");
-        String csvFile = "D:\\loginOperator.csv";
-        String line = "";
-        String csvFile1 = "D:\\UsersAdd.csv";
-        String line1 = "";
-        BufferedReader reader1 = new BufferedReader(new FileReader(csvFile1));
-        BufferedReader reader = new BufferedReader(new FileReader(csvFile));
-        while ((line = reader.readLine()) != null) {
-            String str[] = line.split(";");
-            if (str.length > 1) {
-                System.setProperty("webdriver.chrome.driver", "D:\\DriverBrowser\\chromedriver.exe");
-                System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-                driver.findElement(By.name("login")).sendKeys(str[0]);
-                driver.findElement(By.name("password")).sendKeys(str[1]);
+
+        String csvLoginFile = "D:\\loginOperator.csv";
+        String loginLine;
+        BufferedReader reader = new BufferedReader(new FileReader(csvLoginFile));
+
+        String csvAddUserFile = "D:\\UsersAdd.csv";
+        String addLine;
+        BufferedReader reader1 = new BufferedReader(new FileReader(csvAddUserFile));
+
+        while ((loginLine = reader.readLine()) != null) {
+            String strLogin[] = loginLine.split(";");
+            if (strLogin.length > 1) {
+
+                driver.findElement(By.name("login")).sendKeys(strLogin[0]);
+                driver.findElement(By.name("password")).sendKeys(strLogin[1]);
                 driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
 
-                while ((line = reader.readLine()) != null) {
-                    String str1[] = line.split(";");
-                    if (str.length > 1) {
+                //Form create user
+                while ((addLine = reader1.readLine()) != null) {
+                    String strAddUser[] = addLine.split(";");
+                    if (strAddUser.length > 1) {
 
-                        System.setProperty("webdriver.chrome.driver", "D:\\DriverBrowser\\chromedriver.exe");
-                        System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-                        //Form create user
                         driver.get("http://148.251.88.9:8080/mfc_hmao/admin/create.htm?id=11478361@SXFolder&cls=mfcUser&ra=members&ds=default&link=11478361@SXFolder&7ca8a1c17f9e33d2ec6b498540532cfc");
                         driver.findElement(By.id("id_surname")).clear();
-                        driver.findElement(By.id("id_surname")).sendKeys(str1[0]); //Авхимко
+                        driver.findElement(By.id("id_surname")).sendKeys(strAddUser[0]); //Авхимко
                         driver.findElement(By.id("id_name")).clear();
-                        driver.findElement(By.id("id_name")).sendKeys(str1[1]); //Дмитрий
+                        driver.findElement(By.id("id_name")).sendKeys(strAddUser[1]); //Дмитрий
                         driver.findElement(By.id("id_patronymic")).clear();
-                        driver.findElement(By.id("id_patronymic")).sendKeys(str1[2]); //Леонидович
+                        driver.findElement(By.id("id_patronymic")).sendKeys(strAddUser[2]); //Леонидович
                         driver.findElement(By.id("id_login")).clear();
-                        driver.findElement(By.id("id_login")).sendKeys(str1[3]); //AvhimkovDL
+                        driver.findElement(By.id("id_login")).sendKeys(strAddUser[3]); //AvhimkovDL
                         driver.findElement(By.name("data(password)")).clear();
-                        driver.findElement(By.name("data(password)")).sendKeys(str1[4]); //qwe123qwe
+                        driver.findElement(By.name("data(password)")).sendKeys(strAddUser[4]); //qwe123qwe
                         driver.findElement(By.name("data(repassword)")).clear();
-                        driver.findElement(By.name("data(repassword)")).sendKeys(str1[5]); //qwe123qwe
+                        driver.findElement(By.name("data(repassword)")).sendKeys(strAddUser[5]); //qwe123qwe
                         new Select(driver.findElement(By.id("id_mfc"))).selectByVisibleText("Муниципальное казенное учреждение \"Многофункциональный центр предоставления государственных и муниципальных услуг г. Лянтор Сургутского района\"");
                         driver.findElement(By.id("formSubmit")).click();
                         //driver.findElement(By.id("title_operator")).click();
@@ -86,9 +87,6 @@ public class SistematicaCreateUsers {
 //                driver.quit();
             }
         }
-
-
-
         driver.quit();
 
     }
