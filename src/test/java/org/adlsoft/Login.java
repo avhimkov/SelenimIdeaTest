@@ -10,22 +10,21 @@ import java.nio.Buffer;
 
 public class Login {
         WebDriver driver;
-//        void Logpass(String csvFile) throws IOException {
-//        String csvLoginFile = "D:\\login.csv";
-//        String loginLine;
-//        BufferedReader reader = new BufferedReader(new FileReader(csvFile));
-//
-//        while ((loginLine = reader.readLine()) != null) {
-//            String strLogin[] = loginLine.split(";");
-//            if (strLogin.length > 1) {
-//                driver.findElement(By.name("login")).clear();
-//                driver.findElement(By.name("login")).sendKeys("Samosadova");
-//                driver.findElement(By.name("password")).clear();
-//                driver.findElement(By.name("password")).sendKeys("qwe123qwe");
-//                driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
-//            }
-//
-//        }
-//
-//    }
+        public void Logpass(String csvFile, Integer login, Integer pass) throws IOException {
+        String loginLine;
+        BufferedReader reader = new BufferedReader(new FileReader(csvFile));
+
+        while ((loginLine = reader.readLine()) != null) {
+            String strLogin[] = loginLine.split(";");
+            if (strLogin.length > 1) {
+                driver.findElement(By.name("login")).clear();
+                driver.findElement(By.name("login")).sendKeys(strLogin[login]);
+                driver.findElement(By.name("password")).clear();
+                driver.findElement(By.name("password")).sendKeys(strLogin[pass]);
+                driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+            }
+
+        }
+
+    }
 }
