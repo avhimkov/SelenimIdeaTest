@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
 
-public class SistematicaCreateUsers {
+public class CreateUsers {
 
     @Before
     public void logPass() throws IOException {

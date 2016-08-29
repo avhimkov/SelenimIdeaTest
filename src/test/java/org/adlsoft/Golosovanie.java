@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.*;
 
 import java.lang.*;
 
-public class GolosovanieMfc {
+public class Golosovanie {
 
     @Before
     public void logPass() throws IOException {
