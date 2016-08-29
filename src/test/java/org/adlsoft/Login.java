@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.nio.Buffer;
 
 class Login {
-        private WebDriver driver;
+        WebDriver driver;
         void Logpass(String csvFile, Integer loginkey, Integer passkey, String felogin, String fepass) throws IOException {
         String loginLine;
         BufferedReader reader = new BufferedReader(new FileReader(csvFile));
