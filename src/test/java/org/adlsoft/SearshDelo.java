@@ -19,7 +19,7 @@ public class SearshDelo {
     @Test
     public void test() throws Exception {
         Login log = new Login();
-        log.Logpass("D:\\login.csv", 0, 1, "login", "password", "http://148.251.88.9:8080/mfc_hmao/admin/");
+        log.Logpass("D:\\login.csv", 0, 1, "login", "password", "http://148.251.88.9:8080/mfc_hmao/admin/", 1);
 
         WebDriver driver = new ChromeDriver();
 

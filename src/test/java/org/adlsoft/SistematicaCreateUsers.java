@@ -19,7 +19,7 @@ public class SistematicaCreateUsers {
     public void testCase() throws InterruptedException, IOException {
         WebDriver driver = new ChromeDriver();
         Login log = new Login();
-        log.Logpass("D:\\Login.csv", 0, 1, "login", "password", "http://148.251.88.9:8080/mfc_hmao/admin/");
+        log.Logpass("D:\\Login.csv", 0, 1, "login", "password", "http://148.251.88.9:8080/mfc_hmao/admin/", 1);
 
         String csvAddUserFile = "D:\\UsersAdd.csv";
         String line;

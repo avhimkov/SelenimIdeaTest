@@ -9,7 +9,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 class Login {
-    void Logpass(String csvFile, Integer loginkey, Integer passkey, String felogin, String fepass, String url) throws IOException, InterruptedException {
+    void Logpass(String csvFile, Integer loginkey, Integer passkey, String felogin, String fepass, String url, Integer feelement) throws IOException, InterruptedException {
         System.setProperty("webdriver.chrome.driver", "D:\\DriverBrowser\\chromedriver_win32\\chromedriver.exe");
         System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 
@@ -25,8 +25,17 @@ class Login {
                 driver.findElement(By.name(felogin)).sendKeys(strLogin[loginkey]);//"login", "fileNumber"
                 driver.findElement(By.name(fepass)).clear();
                 driver.findElement(By.name(fepass)).sendKeys(strLogin[passkey]);//"password", "authCode"
-                driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
-                driver.findElement(By.xpath("//button[@type='button']")).click(); //cssSelector"button[type=\"submit\"]"
+                int fe;
+                switch (feelement)
+                {
+                    case 1: driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+                        break;
+                    case 2: driver.findElement(By.xpath("//button[@type='button']")).click(); //cssSelector"button[type=\"submit\"]"
+                        break;
+                    default:
+                        break;
+                }
+
 
 //                Thread.sleep(5000);
             }
