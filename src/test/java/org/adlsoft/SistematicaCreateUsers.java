@@ -10,20 +10,16 @@ import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
 
 public class SistematicaCreateUsers {
-    private WebDriver driver = new ChromeDriver();
 
     @Before
     public void logPass() throws IOException {
-        Login log = new Login();
-        log.Logpass("D:\\Login.csv", 0, 1, "login", "password");
     }
 
     @Test
     public void testCase() throws InterruptedException, IOException {
-
-        System.setProperty("webdriver.chrome.driver", "D:\\DriverBrowser\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-        driver.get("http://148.251.88.9:8080/mfc_hmao/admin/");
+        WebDriver driver = new ChromeDriver();
+        Login log = new Login();
+        log.Logpass("D:\\Login.csv", 0, 1, "login", "password", "http://148.251.88.9:8080/mfc_hmao/admin/");
 
         String csvAddUserFile = "D:\\UsersAdd.csv";
         String line;

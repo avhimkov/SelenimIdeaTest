@@ -11,21 +11,19 @@ import org.adlsoft.Login;
 
 
 public class SearshDelo {
-    WebDriver driver;
 
     @Before
     public void setUp() throws Exception {
-       Login log = new Login();
-       log.Logpass("D:\\login.csv", 0, 1, "login", "password");
     }
 
     @Test
     public void test() throws Exception {
-        WebDriver driver = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver", "D:\\DriverBrowser\\chromedriver_win32\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+        Login log = new Login();
+        log.Logpass("D:\\login.csv", 0, 1, "login", "password", "http://148.251.88.9:8080/mfc_hmao/admin/");
 
-        driver.get("http://148.251.88.9:8080/mfc_hmao/admin/");
+        WebDriver driver = new ChromeDriver();
+
+//        driver.findElement(By.xpath("//button[@type='button']")).click();
 
         driver.findElement(By.id("title_iSurname")).click();
         driver.findElement(By.id("title_iSurname")).sendKeys("Абубакиров");
