@@ -45,6 +45,21 @@ public class SistematicaCreateUsers {
                 driver.findElement(By.name("data(repassword)")).sendKeys(str[5]); //qwe123qwe
                 new Select(driver.findElement(By.id("id_mfc"))).selectByVisibleText("Муниципальное казенное учреждение \"Многофункциональный центр предоставления государственных и муниципальных услуг г. Лянтор Сургутского района\"");
                 driver.findElement(By.id("formSubmit")).click();
+//              int
+//                switch (fe_id)
+//                {
+//                    case 1: driver.findElement(By.id("title_operator")).click();
+//                        break;
+//                    case 2: driver.findElement(By.id("title_controller")).click();
+//                        break;
+//                    case 3: driver.findElement(By.id("title_docved")).click();
+//                        break;
+//                    case 4: driver.findElement(By.id("title_esia")).click();
+//                        break;
+//                    default:
+//                        break;
+//                }
+
                 //driver.findElement(By.id("title_operator")).click();
                 //driver.findElement(By.id("title_controller")).click();
                 //driver.findElement(By.id("title_docved")).click();

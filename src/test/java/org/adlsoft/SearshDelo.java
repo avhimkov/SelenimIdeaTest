@@ -23,8 +23,6 @@ public class SearshDelo {
 
         WebDriver driver = new ChromeDriver();
 
-//        driver.findElement(By.xpath("//button[@type='button']")).click();
-
         driver.findElement(By.id("title_iSurname")).click();
         driver.findElement(By.id("title_iSurname")).sendKeys("Абубакиров");
         driver.findElement(By.cssSelector("input.button_green")).click();
