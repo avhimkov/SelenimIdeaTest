@@ -15,7 +15,8 @@ public class SearshDelo {
 
     @Before
     public void setUp() throws Exception {
-//        Logpass("D:\\Golos.csv", 1, 4);
+       Login log = new Login();
+       log.Logpass("D:\\login.csv", 0, 1, "login", "password");
     }
 
     @Test
@@ -36,28 +37,6 @@ public class SearshDelo {
         driver.findElement(By.xpath("(//button[@type='button'])[37]")).click();
         driver.findElement(By.id("winCloseButton")).click();
     }
-
-
-//    public void Logpass(String csvFile) throws IOException {
-//
-//        String loginLine;
-//        BufferedReader reader = new BufferedReader(new FileReader(csvFile));
-//
-//        while ((loginLine = reader.readLine()) != null) {
-////            String strLogin[] = loginLine.split(";");
-////            if (strLogin.length > 1) {
-////                driver.findElement(By.name("login")).clear();
-////                driver.findElement(By.name("login")).sendKeys("Samosadova");
-////                driver.findElement(By.name("password")).clear();
-////                driver.findElement(By.name("password")).sendKeys("qwe123qwe");
-////                driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
-////            }
-////
-////        }
-//
-//    }
-
-
 }
 
 

@@ -8,19 +8,19 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.Buffer;
 
-public class Login {
-        WebDriver driver;
-        public void Logpass(String csvFile, Integer login, Integer pass) throws IOException {
+class Login {
+        private WebDriver driver;
+        void Logpass(String csvFile, Integer loginkey, Integer passkey, String felogin, String fepass) throws IOException {
         String loginLine;
         BufferedReader reader = new BufferedReader(new FileReader(csvFile));
 
         while ((loginLine = reader.readLine()) != null) {
             String strLogin[] = loginLine.split(";");
             if (strLogin.length > 1) {
-                driver.findElement(By.name("login")).clear();
-                driver.findElement(By.name("login")).sendKeys(strLogin[login]);
-                driver.findElement(By.name("password")).clear();
-                driver.findElement(By.name("password")).sendKeys(strLogin[pass]);
+                driver.findElement(By.name(felogin)).clear();
+                driver.findElement(By.name(felogin)).sendKeys(strLogin[loginkey]);//"login", "fileNumber"
+                driver.findElement(By.name(fepass)).clear();
+                driver.findElement(By.name(fepass)).sendKeys(strLogin[passkey]);//"password", "authCode"
                 driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
             }
 
