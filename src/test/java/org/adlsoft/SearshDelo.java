@@ -18,11 +18,11 @@ public class SearshDelo {
 
     @Test
     public void test() throws Exception {
-        Login log = new Login();
-        log.Logpass("D:\\login.csv", 0, 1, "login", "password", "http://148.251.88.9:8080/mfc_hmao/admin/", 1);
+        Login login = new Login();
+        login.Logpass("D:\\login.csv", 0, 1, "login", "password", "http://148.251.88.9:8080/mfc_hmao/admin/", 1);
 
         WebDriver driver = new ChromeDriver();
-
+        // not work
         driver.findElement(By.id("title_iSurname")).click();
         driver.findElement(By.id("title_iSurname")).sendKeys("Абубакиров");
         driver.findElement(By.cssSelector("input.button_green")).click();
