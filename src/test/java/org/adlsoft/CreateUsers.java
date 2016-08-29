@@ -45,7 +45,8 @@ public class CreateUsers {
                 driver.findElement(By.name("data(repassword)")).sendKeys(str[5]); //qwe123qwe
                 new Select(driver.findElement(By.id("id_mfc"))).selectByVisibleText("Муниципальное казенное учреждение \"Многофункциональный центр предоставления государственных и муниципальных услуг г. Лянтор Сургутского района\"");
                 driver.findElement(By.id("formSubmit")).click();
-//              int
+                driver.findElement(By.id("title_operator")).click();
+//                int fe_id;
 //                switch (fe_id)
 //                {
 //                    case 1: driver.findElement(By.id("title_operator")).click();
@@ -59,11 +60,6 @@ public class CreateUsers {
 //                    default:
 //                        break;
 //                }
-
-                //driver.findElement(By.id("title_operator")).click();
-                //driver.findElement(By.id("title_controller")).click();
-                //driver.findElement(By.id("title_docved")).click();
-                driver.findElement(By.id("title_esia")).click();
                 Thread.sleep(5000);  // Let the user actually see something!
 
             }
