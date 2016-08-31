@@ -27,15 +27,15 @@ class Login {
                 driver.findElement(By.name(fepass)).clear();
                 driver.findElement(By.name(fepass)).sendKeys(str[passkey]);//"password", "authCode"
 
-                switch (feelement)
-                {
-                    case 1: driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
-                        break;
-                    case 2: driver.findElement(By.xpath("//button[@type='button']")).click(); //cssSelector"button[type=\"submit\"]"
-                        break;
-                    default:
-                        break;
-                }
+//                switch (feelement)
+//                {
+//                    case 1: driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+//                        break;
+//                    case 2: driver.findElement(By.xpath("//button[@type='button']")).click(); //cssSelector"button[type=\"submit\"]"
+//                        break;
+//                    default:
+//                        break;
+//                }
             }
         }
     }
