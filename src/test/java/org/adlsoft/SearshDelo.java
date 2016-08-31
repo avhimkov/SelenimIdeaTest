@@ -23,15 +23,15 @@ public class SearshDelo {
 
         WebDriver driver = new ChromeDriver();
         // not work
-//        driver.findElement(By.id("title_iSurname")).click();
-//        driver.findElement(By.id("title_iSurname")).sendKeys("Абубакиров");
-//        driver.findElement(By.cssSelector("input.button_green")).click();
-//        driver.findElement(By.cssSelector("button.tm")).click();
-//        driver.findElement(By.cssSelector("#td10358281 > nobr")).click();
-//        driver.findElement(By.id("td10358287")).click();
-//        driver.findElement(By.xpath("(//button[@type='button'])[55]")).click();
-//        driver.findElement(By.xpath("(//button[@type='button'])[37]")).click();
-//        driver.findElement(By.id("winCloseButton")).click();
+        driver.findElement(By.id("title_iSurname")).click();
+        driver.findElement(By.id("title_iSurname")).sendKeys("Абубакиров");
+        driver.findElement(By.cssSelector("input.button_green")).click();
+        driver.findElement(By.cssSelector("button.tm")).click();
+        driver.findElement(By.cssSelector("#td10358281 > nobr")).click();
+        driver.findElement(By.id("td10358287")).click();
+        driver.findElement(By.xpath("(//button[@type='button'])[55]")).click();
+        driver.findElement(By.xpath("(//button[@type='button'])[37]")).click();
+        driver.findElement(By.id("winCloseButton")).click();
     }
 }
 

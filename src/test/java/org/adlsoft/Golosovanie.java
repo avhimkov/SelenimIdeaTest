@@ -21,7 +21,7 @@ public class Golosovanie {
         log.Logpass("D:\\golos.csv", 1, 4, "fileNumber", "authCode", "http://mfc.admhmao.ru/mfctablet/quality.htm", 2);
 
         WebDriver driver = new ChromeDriver();
-//        driver.quit();
+        driver.quit();
     }
 }
 
