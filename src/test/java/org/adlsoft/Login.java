@@ -18,7 +18,8 @@ class Login {
 
         WebDriver driver = new ChromeDriver();
         driver.get(url); //"http://mfc.admhmao.ru/mfctablet/quality.htm"
-        while ((line = reader.readLine()) != null) {
+//        while ((line = reader.readLine()) != null) {
+            line = reader.readLine();
             String str[] = line.split(";");
             if (str.length > 1) {
                 driver.findElement(By.name(felogin)).clear();
@@ -36,6 +37,6 @@ class Login {
                         break;
                 }
             }
-        }
+//        }
     }
 }
