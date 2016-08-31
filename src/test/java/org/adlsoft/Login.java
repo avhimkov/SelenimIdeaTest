@@ -18,24 +18,23 @@ class Login {
 
         WebDriver driver = new ChromeDriver();
         driver.get(url); //"http://mfc.admhmao.ru/mfctablet/quality.htm"
-        while ((line = reader.readLine()) != null) {
-//            line = reader.readLine();
-            String str[] = line.split(";");
-            if (str.length > 1) {
-                driver.findElement(By.name(felogin)).clear();
-                driver.findElement(By.name(felogin)).sendKeys(str[loginkey]);//"login", "fileNumber"
-                driver.findElement(By.name(fepass)).clear();
-                driver.findElement(By.name(fepass)).sendKeys(str[passkey]);//"password", "authCode"
+        line = reader.readLine();
+        String str[] = line.split(";");
+        if (str.length > 1) {
+            driver.findElement(By.name(felogin)).clear();
+            driver.findElement(By.name(felogin)).sendKeys(str[loginkey]);//"login", "fileNumber"
+            driver.findElement(By.name(fepass)).clear();
+            driver.findElement(By.name(fepass)).sendKeys(str[passkey]);//"password", "authCode"
 
-                switch (feelement)
-                {
-                    case 1: driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
-                        break;
-                    case 2: driver.findElement(By.xpath("//button[@type='button']")).click(); //cssSelector"button[type=\"submit\"]"
-                        break;
-                    default:
-                        break;
-                }
+            switch (feelement) {
+                case 1:
+                    driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+                    break;
+                case 2:
+                    driver.findElement(By.xpath("//button[@type='button']")).click(); //cssSelector"button[type=\"submit\"]"
+                    break;
+                default:
+                    break;
             }
         }
     }
