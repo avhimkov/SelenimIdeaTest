@@ -46,20 +46,20 @@ public class CreateUsers {
                 new Select(driver.findElement(By.id("id_mfc"))).selectByVisibleText("Муниципальное казенное учреждение \"Многофункциональный центр предоставления государственных и муниципальных услуг г. Лянтор Сургутского района\"");
                 driver.findElement(By.id("formSubmit")).click();
                 driver.findElement(By.id("title_operator")).click();
-//                int fe_id = 0;
-//                switch (fe_id)
-//                {
-//                    case 1: driver.findElement(By.id("title_operator")).click();
-//                        break;
-//                    case 2: driver.findElement(By.id("title_controller")).click();
-//                        break;
-//                    case 3: driver.findElement(By.id("title_docved")).click();
-//                        break;
-//                    case 4: driver.findElement(By.id("title_esia")).click();
-//                        break;
-//                    default:
-//                        break;
-//                }
+                int fe_id = 0;
+                switch (fe_id)
+                {
+                    case 1: driver.findElement(By.id("title_operator")).click();
+                        break;
+                    case 2: driver.findElement(By.id("title_controller")).click();
+                        break;
+                    case 3: driver.findElement(By.id("title_docved")).click();
+                        break;
+                    case 4: driver.findElement(By.id("title_esia")).click();
+                        break;
+                    default:
+                        break;
+                }
                 Thread.sleep(5000);  // Let the user actually see something!
 
             }
