@@ -34,7 +34,6 @@ public class CreateUsers {
                 driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
             }
         }
-
         String line;
         BufferedReader reader = new BufferedReader(new FileReader("D:\\UsersAdd.csv"));
         //Form create user
@@ -74,7 +73,6 @@ public class CreateUsers {
                     default:
                         break;
                 }
-
             }
         }
         driver.quit();
