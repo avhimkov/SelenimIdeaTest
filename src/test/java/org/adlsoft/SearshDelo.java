@@ -32,6 +32,7 @@ public class SearshDelo {
                 driver.findElement(By.name("password")).clear();
                 driver.findElement(By.name("password")).sendKeys(str[1]);//"password", "authCode"
                 driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+
 //          Find user
                 driver.switchTo().defaultContent();
                 driver.switchTo().frame(driver.findElement(By.xpath("//frame[contains(@src ,'admin/console_welcome.htm')]")));
