@@ -20,9 +20,9 @@ public class SearshDelo {
         WebDriver driver = new ChromeDriver();
         driver.get("http://148.251.88.9:8080/mfc_hmao/admin/");
         String line = null;
-        System.setProperty("webdriver.chrome.driver", "D:\\DriverBrowser\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
         System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-        BufferedReader reader = new BufferedReader(new FileReader("D:\\login.csv"));
+        BufferedReader reader = new BufferedReader(new FileReader("src/csv/login.csv"));
 
         while ((line = reader.readLine()) != null) {
             String str[] = line.split(";");

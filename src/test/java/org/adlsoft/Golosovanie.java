@@ -17,13 +17,13 @@ public class Golosovanie {
     @Test
     public void testCase() throws IOException, InterruptedException {
 //      Голосование
-        System.setProperty("webdriver.chrome.driver", "D:\\DriverBrowser\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
         System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 
         String line;
         WebDriver driver = new ChromeDriver();
         driver.get("http://mfc.admhmao.ru/mfctablet/quality.htm");
-        BufferedReader reader = new BufferedReader(new FileReader("D:\\golos.csv"));
+        BufferedReader reader = new BufferedReader(new FileReader("src/csv/golos.csv"));
         while ((line = reader.readLine()) != null) {
             String str[] = line.split(";");
             if (str.length > 1) {

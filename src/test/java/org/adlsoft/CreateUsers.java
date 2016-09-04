@@ -17,13 +17,13 @@ public class CreateUsers {
 
     @Test
     public void testCase() throws InterruptedException, IOException {
-        System.setProperty("webdriver.chrome.driver", "D:\\DriverBrowser\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
         System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
         String basedurl = "http://148.251.88.9:8080/mfc_hmao/admin/";
         WebDriver driver = new ChromeDriver();
         driver.get(basedurl);
         String line1;
-        BufferedReader reader1 = new BufferedReader(new FileReader("D:\\loginadmin.csv"));
+        BufferedReader reader1 = new BufferedReader(new FileReader("scr/csv/loginadmin.csv"));
         while ((line1 = reader1.readLine()) != null) {
             String str[] = line1.split(";");
             if (str.length > 1) {
