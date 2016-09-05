@@ -13,7 +13,7 @@ public class CreateUsers {
 
     @Test
     public void testCase() throws InterruptedException, IOException {
-        String lineLogin = null;
+        String lineLogin;
         System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
         String basedurl = "http://148.251.88.9:8080/mfc_hmao/admin/";
         WebDriver driver = new ChromeDriver();
@@ -30,14 +30,14 @@ public class CreateUsers {
 
                 //Form create user
                 String line;
-                BufferedReader reader = new BufferedReader(new FileReader("src/csv/UsersAdd.csv"));
+                BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("src/csv/UsersAdd.csv"), "windows-1251"));
                 while ((line = reader.readLine()) != null) {
                     String strUsers[] = line.split(";");
                     if (strUsers.length > 1) {
 
                         driver.get(basedurl + "create.htm?id=11478361@SXFolder&cls=mfcUser&ra=members&ds=default&link=11478361@SXFolder&7ca8a1c17f9e33d2ec6b498540532cfc");
                         driver.findElement(By.id("id_surname")).clear();
-                        driver.findElement(By.id("id_surname")).sendKeys("Авхимко"); //Авхимко
+                        driver.findElement(By.id("id_surname")).sendKeys(strUsers[0]); //Авхимко
                         driver.findElement(By.id("id_name")).clear();
                         driver.findElement(By.id("id_name")).sendKeys(strUsers[1]); //Дмитрий
                         driver.findElement(By.id("id_patronymic")).clear();
