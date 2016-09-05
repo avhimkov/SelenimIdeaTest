@@ -1,29 +1,24 @@
 package org.adlsoft;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
 
-public class CreateUsers {
+import java.lang.*;
 
-    @Before
-    public void logPass() throws IOException {
-    }
+public class CreateUsers {
 
     @Test
     public void testCase() throws InterruptedException, IOException {
+        String lineLogin = null;
         System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
-        System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
         String basedurl = "http://148.251.88.9:8080/mfc_hmao/admin/";
         WebDriver driver = new ChromeDriver();
-        driver.get(basedurl);
-        String lineLogin;
-        BufferedReader reader1 = new BufferedReader(new FileReader("scr/csv/loginadmin.csv"));
+        driver.get("http://148.251.88.9:8080/mfc_hmao/admin/");
+        BufferedReader reader1 = new BufferedReader(new FileReader("src/csv/login.csv"));
         while ((lineLogin = reader1.readLine()) != null) {
             String str[] = lineLogin.split(";");
             if (str.length > 1) {
@@ -33,15 +28,16 @@ public class CreateUsers {
                 driver.findElement(By.name("password")).sendKeys(str[1]);//"password", "authCode"
                 driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
 
+                //Form create user
                 String line;
-                BufferedReader reader = new BufferedReader(new FileReader("D:\\UsersAdd.csv"));
+                BufferedReader reader = new BufferedReader(new FileReader("src/csv/UsersAdd.csv"));
                 while ((line = reader.readLine()) != null) {
                     String strUsers[] = line.split(";");
                     if (strUsers.length > 1) {
 
                         driver.get(basedurl + "create.htm?id=11478361@SXFolder&cls=mfcUser&ra=members&ds=default&link=11478361@SXFolder&7ca8a1c17f9e33d2ec6b498540532cfc");
                         driver.findElement(By.id("id_surname")).clear();
-                        driver.findElement(By.id("id_surname")).sendKeys(strUsers[0]); //Авхимко
+                        driver.findElement(By.id("id_surname")).sendKeys("Авхимко"); //Авхимко
                         driver.findElement(By.id("id_name")).clear();
                         driver.findElement(By.id("id_name")).sendKeys(strUsers[1]); //Дмитрий
                         driver.findElement(By.id("id_patronymic")).clear();
@@ -55,32 +51,27 @@ public class CreateUsers {
                         new Select(driver.findElement(By.id("id_mfc"))).selectByVisibleText("Муниципальное казенное учреждение \"Многофункциональный центр предоставления государственных и муниципальных услуг г. Лянтор Сургутского района\"");
                         driver.findElement(By.id("formSubmit")).click();
                         driver.findElement(By.id("title_operator")).click();
-                        int fe_id = 0;
-                        switch (fe_id) {
-                            case 1:
-                                driver.findElement(By.id("title_operator")).click();
-                                break;
-                            case 2:
-                                driver.findElement(By.id("title_controller")).click();
-                                break;
-                            case 3:
-                                driver.findElement(By.id("title_docved")).click();
-                                break;
-                            case 4:
-                                driver.findElement(By.id("title_esia")).click();
-                                break;
-                            default:
-                                break;
-                        }
-
+//                        int fe_id = 0;
+//                        switch (fe_id) {
+//                            case 1:
+//                                driver.findElement(By.id("title_operator")).click();
+//                                break;
+//                            case 2:
+//                                driver.findElement(By.id("title_controller")).click();
+//                                break;
+//                            case 3:
+//                                driver.findElement(By.id("title_docved")).click();
+//                                break;
+//                            case 4:
+//                                driver.findElement(By.id("title_esia")).click();
+//                                break;
+//                            default:
+//                                break;
+//                        }
                     }
                 }
             }
         }
-
-
-        //Form create user
-
         driver.quit();
     }
 }

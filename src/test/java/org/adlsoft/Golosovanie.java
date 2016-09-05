@@ -10,15 +10,10 @@ import java.lang.*;
 
 public class Golosovanie {
 
-    @Before
-    public void logPass() throws IOException {
-    }
-
     @Test
     public void testCase() throws IOException, InterruptedException {
 //      Голосование
         System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
-        System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 
         String line;
         WebDriver driver = new ChromeDriver();
