@@ -23,9 +23,9 @@ public class Golosovanie {
             String str[] = line.split(";");
             if (str.length > 1) {
                 driver.findElement(By.name("fileNumber")).clear();
-                driver.findElement(By.name("fileNumber")).sendKeys(str[1]);//"login", "fileNumber"
+                driver.findElement(By.name("fileNumber")).sendKeys(str[1]);
                 driver.findElement(By.name("authCode")).clear();
-                driver.findElement(By.name("authCode")).sendKeys(str[4]);//"password", "authCode"
+                driver.findElement(By.name("authCode")).sendKeys(str[4]);
                 driver.findElement(By.xpath("//button[@type='button']")).click();
 
             }

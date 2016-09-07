@@ -23,9 +23,9 @@ public class CreateUsers {
             String str[] = lineLogin.split(";");
             if (str.length > 1) {
                 driver.findElement(By.name("login")).clear();
-                driver.findElement(By.name("login")).sendKeys(str[0]);//"login", "fileNumber"
+                driver.findElement(By.name("login")).sendKeys(str[0]);
                 driver.findElement(By.name("password")).clear();
-                driver.findElement(By.name("password")).sendKeys(str[1]);//"password", "authCode"
+                driver.findElement(By.name("password")).sendKeys(str[1]);
                 driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
 
                 //Form create user
@@ -51,6 +51,7 @@ public class CreateUsers {
                         new Select(driver.findElement(By.id("id_mfc"))).selectByVisibleText("Муниципальное казенное учреждение \"Многофункциональный центр предоставления государственных и муниципальных услуг г. Лянтор Сургутского района\"");
                         driver.findElement(By.id("formSubmit")).click();
                         driver.findElement(By.id("title_operator")).click();
+                        driver.findElement(By.id("title_esia")).click();
 //                        int fe_id = 0;
 //                        switch (fe_id) {
 //                            case 1:

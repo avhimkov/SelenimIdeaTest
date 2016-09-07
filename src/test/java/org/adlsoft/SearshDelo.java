@@ -23,9 +23,9 @@ public class SearshDelo {
             String str[] = line.split(";");
             if (str.length > 1) {
                 driver.findElement(By.name("login")).clear();
-                driver.findElement(By.name("login")).sendKeys(str[0]);//"login", "fileNumber"
+                driver.findElement(By.name("login")).sendKeys(str[0]);
                 driver.findElement(By.name("password")).clear();
-                driver.findElement(By.name("password")).sendKeys(str[1]);//"password", "authCode"
+                driver.findElement(By.name("password")).sendKeys(str[1]);
                 driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
 
 //          Find user
