@@ -27,6 +27,17 @@ public class Golosovanie {
                 driver.findElement(By.name("authCode")).clear();
                 driver.findElement(By.name("authCode")).sendKeys(str[4]);
                 driver.findElement(By.xpath("//button[@type='button']")).click();
+                driver.findElement(By.xpath("//div[@id='page0']/div[2]/div/div[2]/ul/li[5]/label/span")).click();
+                driver.findElement(By.xpath("//button[@type='button']")).click();
+                driver.findElement(By.xpath("//div[@id='page1']/div[2]/div/div[2]/ul/li[4]/label/span")).click();
+                driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
+                driver.findElement(By.xpath("//div[@id='page2']/div[2]/div/div[2]/ul/li[5]/label/span")).click();
+                driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
+                driver.findElement(By.xpath("//div[@id='page3']/div[2]/div/div[2]/ul/li[5]/label/span")).click();
+                driver.findElement(By.xpath("(//button[@type='button'])[4]")).click();
+                driver.findElement(By.xpath("//div[@id='page4']/div[2]/div/div[2]/ul/li[5]/label/span")).click();
+                driver.findElement(By.xpath("(//button[@type='button'])[5]")).click();
+                driver.findElement(By.xpath("(//button[@type='button'])[6]")).click();
 
             }
         }
