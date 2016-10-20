@@ -12,8 +12,7 @@ public class SearshDelo {
 
     @Test
     public void test() throws Exception {
-
-        String line = null;
+        String line;
         System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://148.251.88.9:8080/mfc_hmao/admin/");
