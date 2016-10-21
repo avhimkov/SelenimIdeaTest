@@ -15,12 +15,12 @@ public class Golosovanie {
 //      Голосование
         String line;
         BufferedReader reader = new BufferedReader(new FileReader("src/csv/golos.csv"));
+        System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        driver.get("http://mfc.admhmao.ru/mfctablet/quality.htm");
         while ((line = reader.readLine()) != null) {
             String str[] = line.split(";");
             if (str.length > 1) {
-                System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
-                WebDriver driver = new ChromeDriver();
-                driver.get("http://mfc.admhmao.ru/mfctablet/quality.htm");
                 driver.findElement(By.name("fileNumber")).clear();
                 driver.findElement(By.name("fileNumber")).sendKeys(str[1]);
                 driver.findElement(By.name("authCode")).clear();
@@ -37,9 +37,9 @@ public class Golosovanie {
                 driver.findElement(By.xpath("//div[@id='page4']/div[2]/div/div[2]/ul/li[5]/label/span")).click();
                 driver.findElement(By.xpath("(//button[@type='button'])[5]")).click();
                 driver.findElement(By.xpath("(//button[@type='button'])[6]")).click();
-                driver.quit();
+                Thread.sleep(1000);
             }
         }
-
+//        driver.quit();
     }
 }
