@@ -40,6 +40,6 @@ public class Golosovanie {
                 Thread.sleep(1000);
             }
         }
-//        driver.quit();
+        driver.quit();
     }
 }
