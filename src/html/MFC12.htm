@@ -1,0 +1,9722 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+ <title>Редактирование</title>
+ <base href="http://148.251.88.9:8080/mfc_hmao/"><!--[if IE]></base><![endif]-->
+ <meta http-equiv="X-UA-TextLayoutMetrics" content="natural" />
+ <meta name="description" content="Редактирование объекта" />
+ <meta name="keywords" content="" />
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <link type="text/css" rel="stylesheet" href="admin/styleblue.css" />
+ <link type="text/css" rel="stylesheet" href="admin/styles/sprite/toolbar.css" />
+ <link type="text/css" rel="stylesheet" href="admin/styles/sprite/admicons.css" />
+ <link rel="icon" href="http://148.251.88.9:8080/mfc_hmao/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://148.251.88.9:8080/mfc_hmao/favicon.ico" type="image/x-icon" />
+
+ <script type="text/javascript" src="admin/scripts/resize.js"></script>
+ <script type="text/javascript" src="admin/scripts/images.js"></script>
+ <script type="text/javascript" src="admin/scripts/cal2_setup.js"></script>
+ <script type="text/javascript" src="admin/scripts/cal2.js"></script>
+ <script type="text/javascript" src="admin/scripts/object.js"></script>
+ <script type="text/javascript" src="admin/scripts/editobject.js"></script>
+ <script type="text/javascript" src="admin/scripts/dhtmlmenu.js"></script>
+ <script type="text/javascript" src="admin/scripts/fieldlistener.js"></script>
+ <script type="text/javascript" src="admin/scripts/hint.js"></script>
+ <script type="text/javascript" src="admin/scripts/cscroll.js"></script>
+ <script type="text/javascript" src="admin/scripts/autoMask.js"></script>
+ <script type="text/javascript" src="admin/scripts/translate.js"></script>
+ 
+<script>
+    useModalWindows=false;
+    if (useModalWindows) document.oncontextmenu=new Function('return false');
+	
+/*    if(useModalWindows && self.opener==null){
+	    var opener= (window.dialogArguments && window.dialogArguments.location) ? window.dialogArguments : null; 
+    }*/
+</script>
+
+
+</head>
+<body class="editBG" onload="try {resize();} catch (e) {}">
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr>
+<td width="100%"><span id="toolbarHTML">&nbsp;</span>
+<span id="inwork"></span>
+<table cellpadding="0" cellspacing="0" width="100%" class="editBG">
+<tr>
+  <td width="100%" colspan="2" align="center" valign="top"><div style="color:green; margin: 10px; padding: 10px; border: thin groove green;">Не забудьте напомнить гражданину о возможности проголосовать о качестве предоставленной услуги!<br />
+Проголосовать можно будет при получении результата услуги в МФЦ (по СМС), или после получения результата услуги на портале mfc.admhmao.ru, а так же через ИК.</div><script type="text/javascript">
+    var templateViewMode = 'edit';
+  </script>
+  
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="admin/scripts/ajax/core/jsonrpc.js"></script>
+<script type="text/javascript" src="admin/scripts/js.js"></script>
+
+<script type="text/javascript" src="admin/scripts/controls/core/prototype.js"></script>
+<script type="text/javascript" src="admin/scripts/controls/controls/livepipe.js"></script>
+<script type="text/javascript" src="admin/scripts/controls/core/effects.js"></script>
+<script type="text/javascript" src="admin/scripts/controls/core/dragdrop.js"></script>
+<script type="text/javascript" src="admin/scripts/controls/controls/window.js"></script>
+<script type="text/javascript" src="admin/scripts/controls/controls/simplelist.js"></script>
+<script type="text/javascript" src="admin/scripts/actions/render.js"></script>
+<script type="text/javascript" src="admin/scripts/actions/cmspage.js"></script>
+<script type="text/javascript" src="admin/scripts/actions/core/cmstab.js"></script>
+<script type="text/javascript" src="admin/scripts/actions/pubobject.js?ver=1"></script>
+
+<script type="text/javascript" src="admin/scripts/autoMask.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="display:none;" id="gridDataHolder">
+
+
+
+
+  
+  
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+      Выдача гражданам справок о размере пенсии (иных выплат)
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--cut-here -->
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+      
+      22.10.2016 19:06:15
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+<!--cut-here -->
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+      
+        
+        
+        
+          
+            
+				<span class="eattr" type="string" readonly="true" objId="910019@mfcSocServPetition"
+                        attrName="folderNumber" onclick="doEdit(event, this);"
+                        onkeypress="if(event.keyCode==13) {getFirstChildTag(this).blur(); return getFalse(event);}">
+				MFC12-161022-2</span>
+            
+            
+          
+        
+      
+    
+  
+
+
+
+
+
+
+
+
+
+<!--cut-here -->
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+      
+      22.10.2016 19:05:28
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+<!--cut-here -->
+  
+
+  
+  
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+      <a tabindex="-1" href='javascript:void(0);'
+         onclick="url('admin/edit.htm?id=373813@wmPersonalCard');return getFalse(event);">Абубакиров Зениди Зедан</a>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--cut-here -->
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+  На подготовке сотрудником МФЦ
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--cut-here -->
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+      
+      27.10.2016 19:06:15
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+<!--cut-here -->
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+      
+        
+        
+        
+          
+            
+				<span class="eattr" type="string" readonly="false" objId="910019@mfcSocServPetition"
+                        attrName="refuseTemplate" onclick="doEdit(event, this);"
+                        onkeypress="if(event.keyCode==13) {getFirstChildTag(this).blur(); return getFalse(event);}">
+				</span>
+            
+            
+          
+        
+      
+    
+  
+
+
+
+
+
+
+
+
+&nbsp;
+<!--cut-here -->
+  
+
+</div>
+<script>
+  var gridMassiv = document.getElementById("gridDataHolder").innerHTML.split("<!--cut-here -->");
+  gridMassiv.length = gridMassiv.length - 1;
+  //alert(gridMassiv.length+"\n\n"+gridMassiv);
+  var gnstr = "service,timeStamp,folderNumber,createDate,pc,status,endDate,refuseTemplate";
+  var gridNamesMassiv = gnstr.split(",");
+</script>
+
+
+  
+
+
+
+
+  
+
+
+
+<script type="text/javascript">
+  var hasEditForm = true;
+  var isRefresh = false;
+  function execute_addToGrid() {
+    addToGrid("910019@mfcSocServPetition", "MFC12-161022-2", "update");
+  }
+  var _wo = window.opener;
+  if (_wo && !_wo.closed) {
+    setTimeout("execute_addToGrid()", 100);
+  }
+  try {
+    if (_wo && !_wo.closed && _wo.parent && _wo.refreshParent) {
+      _wo.refreshParent();
+    }
+  } catch (e) {
+  }
+</script>
+
+
+
+<div id="obj_910019@mfcSocServPetition_body"
+     objId="910019@mfcSocServPetition"
+     objTitle="MFC12-161022-2"
+     classTitle="Заявление на соц. услугу"
+     isAbstract="false"
+     openMode="edit"
+     isBlocked="false"
+     blockedBy=""
+    >
+  <div id="formBody">
+    
+      <iframe class="virtual" id="blockobj" src="util/BlockObj.sx?objId=910019@mfcSocServPetition"></iframe>
+    
+    <form onsubmit="return validate(this)" name="formMain" enctype="multipart/form-data" method="post"
+          action="admin/edit.htm?id=910019@mfcSocServPetition"
+          id="obj_910019@mfcSocServPetition_form">
+      
+	<input type="Hidden" name="fid" value="23">
+
+
+
+	<input type="Hidden" name="blk" value="10131638">
+
+
+      
+
+      <input type="Hidden" name="modified" id="modified" value="false">
+      <input type="Hidden" name="cmd" id="hid_cmd" value="reload">
+      <input type="Hidden" name="cas" id="hid_cas" value="false">
+      <input type="Hidden" name="id" value="910019@mfcSocServPetition">
+      
+      <input type="hidden" name="requestNumber" value="1477152376141"/>
+
+      
+        <input type="Hidden" name="agrp" id="agrp" value="10362525"/>
+        <input type="Hidden" name="agrpChld" id="agrpChld"/>
+      
+      <table cellpadding="1" cellspacing="0" width="100%" class="toolbar">
+        <tr>
+          <td>&nbsp;</td>
+          <td class="menu">
+            
+            <button type="button" class="tm" >
+              
+                
+                  <div class="admicons admico-i109" ></div>
+                
+                
+              
+            </button>
+          </td>
+          <td class="title">MFC12-161022-2</td>
+          <td align="right" class="cmd">
+            <nobr>
+              
+              
+                
+                
+              
+              
+              <input type="submit" name="saveData" value="Сохранить" class="button_green"
+                     onClick="setChanged(false);closeWinFlag=false;displayDialog=false;setCAS(this.form,false);return setCMD(this.form,'update')" />
+              <span id="placeforDeletebutton"></span>
+              
+              <input type="button" value="Закрыть" class="button_blue" id="winCloseButton"
+                     onClick="doCloseWin();return getFalse(event);"/>
+              
+            </nobr>
+          </td>
+        </tr>
+      </table>
+
+      
+
+      <!--FORM_ATTRS_DATA_CUT-->
+      <div class="formAttrsData">
+        <div class="freeAttrsArea" style="padding:10px;">
+          <table cellpadding="1" width="100%" cellspacing=1>
+            
+            
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tr id="row_service" data-view='50'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10358602'><span id="attrtitle_service">
+  <b title="Услуга">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10358602@SXAttr' attrName='title'>
+          Услуга
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(service)"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" name="nodata(service)" id="id_service"
+       value="10577394@spkSocService"/>
+
+  
+    Выдача гражданам справок о размере пенсии (иных выплат)
+  
+  
+  
+
+
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_authCode" data-view='771'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10405391'><span id="attrtitle_authCode">
+  <b title="Код авторизации">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10405391@SXAttr' attrName='title'>
+          Код авторизации
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(authCode)"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+      10019
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_folderNumber" data-view='0'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10361176'><span id="attrtitle_folderNumber">
+  <b title="Номер дела">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10361176@SXAttr' attrName='title'>
+          Номер дела
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(folderNumber)"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+      MFC12-161022-2
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_createDate" data-view='5'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10358601'><span id="attrtitle_createDate">
+  <b title="Дата и время подачи">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10358601@SXAttr' attrName='title'>
+          Дата и время подачи
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(createDate)"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+  
+  22.10.2016 19:05:28
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_pc" data-view='10'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10358604'><span id="attrtitle_pc">
+  <b title="Личное дело">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10358604@SXAttr' attrName='title'>
+          Личное дело
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(pc)"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" name="nodata(pc)" id="id_pc"
+       value="373813@wmPersonalCard"/>
+
+  
+  
+  
+    
+    
+      
+        
+        
+          <a tabindex="-1" href='javascript:void(0);' onclick="url('admin/edit.htm?id=373813@wmPersonalCard');">
+        
+      
+    
+    
+      
+      
+        Абубакиров Зениди Зедан
+      
+    
+    
+      </a>
+    
+    
+  
+
+
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_status" data-view='14'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10358646'><span id="attrtitle_status">
+  <b title="Статус">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10358646@SXAttr' attrName='title'>
+          Статус
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+		На подготовке сотрудником МФЦ
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+  
+  
+
+
+
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_fromPortal" data-view='4'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10650833'><span id="attrtitle_fromPortal">
+  <b title="Заявление с портала">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10650833@SXAttr' attrName='title'>
+          Заявление с портала
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(fromPortal)"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <input id="id_fromPortal" type="hidden" value="false"/>
+  
+    
+    
+      <input id="title_fromPortal" type="checkbox" class="checkbox" disabled="disabled"/>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_acceptDate" data-view='5'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10381564'><span id="attrtitle_acceptDate">
+  <b title="Дата принятия">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10381564@SXAttr' attrName='title'>
+          Дата принятия
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(acceptDate)"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+  
+  22.10.2016 19:05:56
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_endDate" data-view='5'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10361200'><span id="attrtitle_endDate">
+  <b title="Срок обработки, до">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10361200@SXAttr' attrName='title'>
+          Срок обработки, до
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(endDate)"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+  
+  27.10.2016 19:06:15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_refuseTemplate" data-view='45'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10361316'><span id="attrtitle_refuseTemplate">
+  <b title="Печатная форма">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10361316@SXAttr' attrName='title'>
+          Печатная форма
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+
+    <input type="Hidden" name="data(refuseTemplate)" id="id_refuseTemplate"
+           value="" isMandatory="false" attrTitle="Печатная форма"/>
+    <nobr>
+      
+        
+        
+          
+        
+      
+        
+      
+        
+        
+        
+        
+          
+          
+            <input type="text" name="data(refuseTemplate____title)" id="title_refuseTemplate"
+                   readonly value="объект не выбран" onChange="setChanged()" tabindex="1"
+                   class="disabled" style="width:300px;  margin-right:4px;"
+                   attrTitle="Печатная форма"/>
+          
+        
+      
+	<span id="buttons_refuseTemplate">
+		
+      <button type="button" class="lnk" title="Выбрать" tabindex="-1" action="choose"
+              onClick="getNewObj({name:&#039;refuseTemplate&#039;,prefix:&#039;&#039;},&#039;/hmao/mfc/printPetitions@cmsDir.doc&#039;,&#039;cmsFile&#039;,true,true,false,&#039;admin/select&#039;,&#039;910019@mfcSocServPetition&#039;);return getFalse(event);">
+        <img src="admin/images/view_up.gif" onMouseOver="newImg(this,view_down)" onMouseOut="newImg(this,view_up)"/>
+      </button>
+    
+		
+      <button type="button" class="lnk" title="Удалить" tabindex="-1" action="delete"
+              onClick="delLinkObj({name:'refuseTemplate',prefix:''});return getFalse(event);">
+        <img src="admin/images/delete_src_up.gif" onMouseOver="newImg(this,delete_src_down)"
+             onMouseOut="newImg(this,delete_src_up)"/>
+      </button>
+    
+		
+      <button type="button" class="lnk" title="Редактировать" tabindex="-1" action="edit"
+              onClick="viewObj({id:&#039;id_refuseTemplate&#039;,name:&#039;refuseTemplate&#039;,prefix:&#039;&#039;},&#039;admin/edit&#039;,null,null);return getFalse(event);"
+              title="Редактировать">
+        <img src="admin/images/edit_up.gif" onMouseOver="newImg(this,edit_down)" onMouseOut="newImg(this,edit_up)"/>
+      </button>
+    
+		
+      <button type="button" class="lnk" title="Создать" tabindex="-1" action="create"
+              onClick="createObj({name:&#039;refuseTemplate&#039;,prefix:&#039;&#039;},&#039;910019@mfcSocServPetition&#039;,&#039;cmsFile&#039;,&#039;refuseTemplate&#039;,&#039;admin/create&#039;,&#039;doc&#039;,null,null,&#039;&amp;data(parent)=/hmao/mfc/printPetitions@cmsDir.doc&#039;);return getFalse(event);">
+        <img src="admin/images/create_up.gif" onMouseOver="newImg(this,create_down)"
+             onMouseOut="newImg(this,create_up)"/>
+      </button>
+    
+	</span>
+    </nobr>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <br/><input tabindex="2" type="file" style="width:300px; "
+                onchange="setLinkFileMarkerToLinkAttr(this,'refuseTemplate');"
+                name="file(refuseTemplate)"/>
+  
+
+    <table>
+      <tr>
+        <td style="vertical-align: middle;">
+            
+          
+        </td>
+      </tr>
+    </table>
+  
+
+<button type="button" class="work" title="Сканирование" tabindex="-1"
+        onClick="window.open('http://148.251.88.9:8080/mfc_hmao/admin/scan.htm?objId=910019@mfcSocServPetition&attrId=refuseTemplate', '_blank', 'width=1000,resizable=1,scrollbars=1');">
+    <table cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <td valign="top" style="padding-right:3px;">
+                <img src="admin/icons/i178.gif" width="16" height="16">&nbsp;</td>
+            <td valign="top" style="padding-top:1px;" nowrap="">Сканировать</td>
+        </tr>
+        </tbody>
+    </table>
+</button>
+
+
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_returnReason" style="display:none" data-view='1'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10625314'><span id="attrtitle_returnReason">
+  <b title="Причина возврата">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10625314@SXAttr' attrName='title'>
+          Причина возврата
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(returnReason)"></a>
+
+
+
+
+
+
+  
+    
+      <input type="hidden" attrTitle="Причина возврата" attrType="0" id="id_returnReason">
+      <div class="shared_area" style="height:20px;vertical-align:top;"><i>- нет значения -</i></div>
+    
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_department" data-view='14'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10361474'><span id="attrtitle_department">
+  <b title="Ведомство-получатель">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10361474@SXAttr' attrName='title'>
+          Ведомство-получатель
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ГУ-УПРАВЛЕНИЕ ПФР В Г.СУРГУТЕ ХМАО-ЮГРЫ
+
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_serviceSupplyType" data-view='14'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10456441'><span id="attrtitle_serviceSupplyType">
+  <b title="Способ обработки заявлений">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10456441@SXAttr' attrName='title'>
+          Способ обработки заявлений
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(serviceSupplyType)"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		Бумажный
+	
+
+	
+
+	
+
+	
+
+	
+
+    
+    
+    
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <span title="Отправлено в электронном виде">&nbsp;<span id="attrtitle_sentElectric">
+  <b title="Отправлено в электронном виде">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='11478363@SXAttr' attrName='title'>
+          Отправлено в электронном виде
+      </span>
+  </b>
+  
+  
+  
+  
+ </span>&nbsp;
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(sentElectric)"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <input id="id_sentElectric" type="hidden" value="false"/>
+  
+    
+    
+      <input id="title_sentElectric" type="checkbox" class="checkbox" disabled="disabled"/>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </span>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_livingCondition" data-view='14'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10941117'><span id="attrtitle_livingCondition">
+  <b title="Категория ЖС">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10941117@SXAttr' attrName='title'>
+          Категория ЖС
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(livingCondition)"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" name="nodata(livingCondition)" id="id_livingCondition"
+       value="11@mfcLifeCondition"/>
+
+  
+  
+  
+    
+    
+      
+        
+        
+          <a tabindex="-1" href='javascript:void(0);' onclick="url('admin/edit.htm?id=11@mfcLifeCondition');">
+        
+      
+    
+    
+      
+      
+        Без ЖС
+      
+    
+    
+      </a>
+    
+    
+  
+
+
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_admRegl" data-view='12'>
+
+
+
+
+  
+    
+      
+      <td width='100%' colspan='5'
+      id='editattrtd10364828'><span id="attrtitle_admRegl">
+  <b title="Административный регламент">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10364828@SXAttr' attrName='title'>
+          Административный регламент
+      </span>
+  </b>
+  
+  
+  
+  
+ </span><br/>
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <input type="Hidden" isMandatory="false" name="data(admRegl)"
+         id="id_admRegl" value=""/>
+  <input type="Hidden" name="title_admRegl" id="title_admRegl">
+  
+    <input type="Hidden" id="isLinkNto1_admRegl" value="true">
+  
+  
+
+
+
+
+
+<div id="grid_holder_admRegl" gridBodyTag="grid_container_admRegl">
+<div class="_amount_" style="display:none"></div>
+<input type="Hidden" id="isMadTable_admRegl" value="false">
+<table cellpadding="0" cellspacing="0" style="width:99%;">
+<tr>
+<td>
+<div style="width:99%;overflow:auto;" class="ie6-grid" id="grid_container_admRegl">
+<table cellpadding="3" cellspacing="0" width="100%" class="sort" attrName="admRegl">
+<thead id="grid_container_thead_admRegl">
+<tr style="position: relative; top: expression(this.parentNode.parentNode.parentNode.scrollTop);"
+    id='grid_admRegl'>
+  
+  
+  
+    <th align=left cName='description'>Наименование</th>
+    
+  
+    <th align=left cName='file'>Файл</th>
+    
+  
+  <td class="Rborder">
+    <script>
+      var _columnFilterArray_admRegl = new Array(2);
+    </script>
+    <img src="admin/images/e.gif" width="1" height="1">
+  </td>
+</tr>
+<tr id="filterRow_admRegl"
+    style=" display:none; position: relative;  top: expression(this.parentNode.parentNode.parentNode.scrollTop);">
+  <td class="filter">&nbsp;</td>
+  
+  
+    
+    
+      
+      
+        
+        <td class="filter">
+        &nbsp;
+        <script>
+          _columnFilterArray_admRegl[0] = -1;
+        </script>
+      
+    
+    
+    </td>
+  
+    
+    
+      
+      
+        
+        <td class="filter">
+        &nbsp;
+        <script>
+          _columnFilterArray_admRegl[1] = -1;
+        </script>
+      
+    
+    
+    </td>
+  
+  <td class="Rborder"><img src="admin/images/e.gif" width="1" height="1"></td>
+</tr>
+</thead>
+<tbody id="grid_container_tbody_admRegl">
+
+</tbody>
+</table>
+</div>
+</td>
+<td valign="top" width="1%">
+ <span id="buttons_admRegl">
+
+    </span>
+</td>
+</tr>
+</table>
+<!--[if lte IE 6.5]>
+<iframe class="hideSelectIframe" frameborder=0></iframe><![endif]-->
+</div>
+<br>
+
+<script type="text/javascript">
+  initGridFilters("admRegl", 2);
+  //	scrollContentForMozzArray[scrollContentForMozzArray.length]= new scrollContentForMozzParamRow( "grid_container_thead_admRegl", "grid_container_tbody_admRegl", "grid_container_admRegl");
+
+  initScrollContentForMozz("grid_container_thead_admRegl", "grid_container_tbody_admRegl", "grid_container_admRegl");
+</script>
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_multiServicePetition" data-view='10'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10529941'><span id="attrtitle_multiServicePetition">
+  <b title="Пакет заявлений на несколько услуг">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10529941@SXAttr' attrName='title'>
+          Пакет заявлений на несколько услуг
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(multiServicePetition)"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" name="nodata(multiServicePetition)" id="id_multiServicePetition"
+       value="621104@multipleServicePetition"/>
+
+  
+  
+  
+    
+    
+      
+        
+        
+          <a tabindex="-1" href='javascript:void(0);' onclick="url('admin/edit.htm?id=621104@multipleServicePetition');">
+        
+      
+    
+    
+      
+      
+        621104
+      
+    
+    
+      </a>
+    
+    
+  
+
+
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_package" data-view='8'>
+
+
+
+
+  
+    
+    
+    
+      
+      <td width='30%' class='attrTd' style='vertical-align:middle;'
+          id='editattrtd10529934'><span id="attrtitle_package">
+  <b title="Пакет заявлений (контролеру/в ведомство)">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10529934@SXAttr' attrName='title'>
+          Пакет заявлений (контролеру/в ведомство)
+      </span>
+  </b>
+  
+  
+  
+  
+ </span></td>
+      <td width='70%' colspan='4' style='vertical-align:middle;'>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<a style="display:none;" name="data(package)"></a>
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table cellpadding=0 cellspacing=0><tr>
+	<td valign=top>
+	
+	
+				<select multiple size="10"  id="title_package2"
+					style="width:300px; height:35px; " onDblClick="viewObj(&#039;title_package2&#039;,&#039;admin/edit&#039;,null,null)">
+				
+				</select>
+
+		
+	</td>
+
+	</tr>
+</table>
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+            
+          </table>
+          
+        </div>
+
+          
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+     
+      
+    
+    
+  
+
+  
+  
+    
+     
+      
+    
+    
+  
+
+  
+  
+    
+     
+      
+    
+    
+  
+
+  
+  
+    
+     
+      
+    
+    
+  
+
+  
+  
+    
+     
+      
+    
+    
+  
+
+  
+  
+    
+     
+      
+    
+    
+  
+
+  
+  
+    
+     
+      
+    
+    
+  
+
+  
+  
+    
+     
+      
+    
+    
+  
+
+  
+  
+    
+     
+      
+    
+    
+  
+
+  
+  
+    
+     
+      
+    
+    
+  
+
+  
+  
+    
+      
+    
+    
+    
+  
+
+
+
+
+<div class="tabsArea">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+  
+    <td>
+      <div id="yellowBar"><br></div>
+    </td>
+  
+  <td width="100%">
+    <div name="objTopTabs" style="display:inline">
+      <table cellpadding="2" cellspacing="0" id="topButtonsTable" width="100%" style="border-collapse:collapse;">
+        <tr>
+          
+          <th class="tabW" width="100%">&nbsp;</th>
+        </tr>
+      </table>
+    </div>
+  </td>
+</tr>
+<tr>
+  
+    <td width="1%" height="100%">
+      <div name="objLeftTabs" style="height:100%">
+        <table cellpadding="2" cellspacing="0" height="100%" id="leftButtonsTable" style="border-collapse:collapse;">
+          
+          
+          
+            
+            
+              
+               
+                
+                  
+                  
+                  
+                    <tr>
+                      <td tabindex="1" group="10362525" 
+                          data-prefix="" data-page="admin/edit.htm"
+                          href="admin/edit.htm?id=910019@mfcSocServPetition&amp;cls=mfcSocServPetition&amp;attrPrefix=&amp;agrp=10362525#10362525"
+                          class="tabALeft" data-active="1"
+                          style="
+                          ">
+                        <nobr>
+                          &nbsp;<img src="admin/icons/i16.gif" class="icon"/>
+                          &nbsp;Оповещения
+                          &nbsp;
+                        </nobr>
+                      </td>
+                    </tr>
+                  
+                
+              
+              
+              
+            
+          
+            
+            
+              
+               
+                
+                  
+                  
+                  
+                    <tr>
+                      <td tabindex="2" group="10359779" 
+                          data-prefix="" data-page="admin/edit.htm"
+                          href="admin/edit.htm?id=910019@mfcSocServPetition&amp;cls=mfcSocServPetition&amp;attrPrefix=&amp;agrp=10359779#10359779"
+                          
+                          style="
+                          ">
+                        <nobr>
+                          &nbsp;<img src="admin/icons/i1.gif" class="icon"/>
+                          &nbsp;Межведомственные запросы
+                          &nbsp;
+                        </nobr>
+                      </td>
+                    </tr>
+                  
+                
+              
+              
+              
+            
+          
+            
+            
+              
+               
+                
+                  
+                  
+                  
+                    <tr>
+                      <td tabindex="3" group="10361286" 
+                          data-prefix="" data-page="admin/edit.htm"
+                          href="admin/edit.htm?id=910019@mfcSocServPetition&amp;cls=mfcSocServPetition&amp;attrPrefix=&amp;agrp=10361286#10361286"
+                          
+                          style="
+                          ">
+                        <nobr>
+                          &nbsp;<img src="admin/icons/i37.gif" class="icon"/>
+                          &nbsp;Продление срока обработки заявления
+                          &nbsp;
+                        </nobr>
+                      </td>
+                    </tr>
+                  
+                
+              
+              
+              
+            
+          
+            
+            
+              
+               
+                
+                  
+                  
+                  
+                    <tr>
+                      <td tabindex="4" group="10361244" 
+                          data-prefix="" data-page="admin/edit.htm"
+                          href="admin/edit.htm?id=910019@mfcSocServPetition&amp;cls=mfcSocServPetition&amp;attrPrefix=&amp;agrp=10361244#10361244"
+                          
+                          style="
+                          ">
+                        <nobr>
+                          &nbsp;<img src="admin/icons/i39.gif" class="icon"/>
+                          &nbsp;Результат оказания услуги
+                          &nbsp;
+                        </nobr>
+                      </td>
+                    </tr>
+                  
+                
+              
+              
+              
+            
+          
+            
+            
+              
+               
+                
+                  
+                  
+                  
+                    <tr>
+                      <td tabindex="5" group="10362925" 
+                          data-prefix="" data-page="admin/edit.htm"
+                          href="admin/edit.htm?id=910019@mfcSocServPetition&amp;cls=mfcSocServPetition&amp;attrPrefix=&amp;agrp=10362925#10362925"
+                          
+                          style="
+                          ">
+                        <nobr>
+                          &nbsp;<img src="admin/icons/i150.gif" class="icon"/>
+                          &nbsp;Отказ
+                          &nbsp;
+                        </nobr>
+                      </td>
+                    </tr>
+                  
+                
+              
+              
+              
+            
+          
+            
+            
+              
+               
+                
+                  
+                  
+                  
+                    <tr>
+                      <td tabindex="6" group="10362769" 
+                          data-prefix="" data-page="admin/edit.htm"
+                          href="admin/edit.htm?id=910019@mfcSocServPetition&amp;cls=mfcSocServPetition&amp;attrPrefix=&amp;agrp=10362769#10362769"
+                          
+                          style="
+                          ">
+                        <nobr>
+                          &nbsp;<img src="admin/icons/i22.gif" class="icon"/>
+                          &nbsp;История изменений
+                          &nbsp;
+                        </nobr>
+                      </td>
+                    </tr>
+                  
+                
+              
+              
+              
+            
+          
+            
+            
+              
+               
+                
+                  
+                  
+                  
+                    <tr>
+                      <td tabindex="7" group="10364425" 
+                          data-prefix="" data-page="admin/edit.htm"
+                          href="admin/edit.htm?id=910019@mfcSocServPetition&amp;cls=mfcSocServPetition&amp;attrPrefix=&amp;agrp=10364425#10364425"
+                          
+                          style="
+                          ">
+                        <nobr>
+                          &nbsp;<img src="admin/icons/i21.gif" class="icon"/>
+                          &nbsp;Документы
+                          &nbsp;
+                        </nobr>
+                      </td>
+                    </tr>
+                  
+                
+              
+              
+              
+            
+          
+            
+            
+              
+               
+                
+                  
+                  
+                  
+                    <tr>
+                      <td tabindex="8" group="10726476" 
+                          data-prefix="" data-page="admin/edit.htm"
+                          href="admin/edit.htm?id=910019@mfcSocServPetition&amp;cls=mfcSocServPetition&amp;attrPrefix=&amp;agrp=10726476#10726476"
+                          
+                          style="
+                          ">
+                        <nobr>
+                          &nbsp;<img src="admin/icons/i57.gif" class="icon"/>
+                          &nbsp;Росреестр
+                          &nbsp;
+                        </nobr>
+                      </td>
+                    </tr>
+                  
+                
+              
+              
+              
+            
+          
+            
+            
+              
+               
+                
+                  
+                  
+                  
+                    <tr>
+                      <td tabindex="9" group="10362842" 
+                          data-prefix="" data-page="admin/edit.htm"
+                          href="admin/edit.htm?id=910019@mfcSocServPetition&amp;cls=mfcSocServPetition&amp;attrPrefix=&amp;agrp=10362842#10362842"
+                          
+                          style="
+                          ">
+                        <nobr>
+                          &nbsp;<img src="admin/icons/i55.gif" class="icon"/>
+                          &nbsp;Контроль
+                          &nbsp;
+                        </nobr>
+                      </td>
+                    </tr>
+                  
+                
+              
+              
+              
+            
+          
+            
+            
+              
+               
+                
+                  
+                  
+                  
+                    <tr>
+                      <td tabindex="10" group="10358595" 
+                          data-prefix="" data-page="admin/edit.htm"
+                          href="admin/edit.htm?id=910019@mfcSocServPetition&amp;cls=mfcSocServPetition&amp;attrPrefix=&amp;agrp=10358595#10358595"
+                          
+                          style="
+                          ">
+                        <nobr>
+                          &nbsp;<img src="admin/icons/i99.gif" class="icon"/>
+                          &nbsp;Системные
+                          &nbsp;
+                        </nobr>
+                      </td>
+                    </tr>
+                  
+                
+              
+              
+              
+            
+          
+          <tr>
+            <th height="100%" class="tabWLeft">&nbsp;</th>
+          </tr>
+        </table>
+      </div>
+      <script type="text/javascript">
+        var skip_movingGroups = true;
+        //	moveLeftToTop("10362525");
+      </script>
+    </td>
+  
+  <td valign="top">
+    
+    <table valign="top" cellpadding="1" width="100%" height="100%" cellspacing="0" class="tabLeft">
+      <tr>
+        <td valign="top" style="padding:10px;">
+          
+
+          
+           
+            
+              
+               
+                
+                  
+                  
+                    <div id="group_10362525"
+                         loaded="true" 
+                         title="Оповещения">
+                      
+                        
+                        
+                        
+                        
+                        
+                        <table id="10362525" valign="top" cellpadding="0" width="100%"
+                               align="right">
+                          <tr id="row_byPhone" data-view='4'>
+
+
+
+
+  
+    
+    
+      
+      <td width='100%' colspan='5' nowrap
+      id='editattrtd10362526'><span id="attrtitle_byPhone">
+  <b title="По телефону:">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10362526@SXAttr' attrName='title'>
+          
+      </span>
+  </b>
+  
+  
+  
+  
+ </span>&nbsp;
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+  
+	
+	
+	
+	
+	<input type="hidden" name="data(byPhone)" id="id_byPhone" value="true" attrTitle=""/>
+	<input type="Checkbox" tabindex="11" class="checkbox" name="CheckBoxValue(byPhone)" id="title_byPhone"
+		CHECKED
+		onClick="setChanged(); setCheckBox('CheckBoxValue(byPhone)','data(byPhone)',this.checked,this.form)"/>
+
+
+<b><span class="eattr">По телефону:&nbsp;&nbsp;&nbsp;&nbsp;</span></b>
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <span title="">&nbsp;<span id="attrtitle_phoneNumber">
+  <b title="">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10362527@SXAttr' attrName='title'>
+          
+      </span>
+  </b>
+  
+  
+  
+  
+ </span>&nbsp;
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            777777
+              <input type="hidden" name="data(phoneNumber)" value="777777">
+            
+        
+        
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </span>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_byEmail" data-view='4'>
+
+
+
+
+  
+    
+    
+      
+      <td width='100%' colspan='5' nowrap
+      id='editattrtd10362528'><span id="attrtitle_byEmail">
+  <b title="По электронной почте:">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10362528@SXAttr' attrName='title'>
+          
+      </span>
+  </b>
+  
+  
+  
+  
+ </span>&nbsp;
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+  
+	
+	
+	
+	
+	<input type="hidden" name="data(byEmail)" id="id_byEmail" value="true" attrTitle=""/>
+	<input type="Checkbox" tabindex="11" class="checkbox" name="CheckBoxValue(byEmail)" id="title_byEmail"
+		CHECKED
+		onClick="setChanged(); setCheckBox('CheckBoxValue(byEmail)','data(byEmail)',this.checked,this.form)"/>
+
+
+<b><span class="eattr">По электронной почте:&nbsp;&nbsp;&nbsp;&nbsp;</span></b>
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <span title="">&nbsp;<span id="attrtitle_email">
+  <b title="">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10362529@SXAttr' attrName='title'>
+          
+      </span>
+  </b>
+  
+  
+  
+  
+ </span>&nbsp;
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <input type="text" onKeyPress="setChanged();" name="data(email)"
+		   
+           id="id_email"
+           style="width:300px; ; margin-right:5px;" tabindex="11" onChange="setChanged();"
+           attrTitle="" attrType="0"
+           isMandatory="false"
+           value=""
+           maxLength="255"/>
+    
+    
+ 
+ 
+
+
+        
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </span>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_byMail" data-view='4'>
+
+
+
+
+  
+    
+    
+      
+      <td width='100%' colspan='5' nowrap
+      id='editattrtd10362530'><span id="attrtitle_byMail">
+  <b title="По почте:">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10362530@SXAttr' attrName='title'>
+          
+      </span>
+  </b>
+  
+  
+  
+  
+ </span>&nbsp;
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            <input type="checkbox" class="checkbox" checked="checked" disabled="disabled" style="margin-left: 9px"/>
+        
+        
+    
+
+
+
+<b><span class="eattr">По почте:&nbsp;&nbsp;&nbsp;&nbsp;</span></b>
+
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <span title="">&nbsp;<span id="attrtitle_mailAddress">
+  <b title="">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10362531@SXAttr' attrName='title'>
+          
+      </span>
+  </b>
+  
+  
+  
+  
+ </span>&nbsp;
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            628449, Россия, Ханты-Мансийский Автономный округ - Югра АО, Сургутский р-н
+              <input type="hidden" name="data(mailAddress)" value="628449, Россия, Ханты-Мансийский Автономный округ - Югра АО, Сургутский р-н">
+            
+        
+        
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </span>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_petitionResult" data-view='14'>
+
+
+
+
+
+  
+  <td colspan='5'><table cellpadding=0 cellspacing=0 style='padding-right:3px;' width='100%'><tr>
+
+
+  
+  <td><span id="attrtitle_petitionResult">
+  <b title="Результат оказания услуги выдать:">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10455789@SXAttr' attrName='title'>
+          Результат оказания услуги выдать:
+      </span>
+  </b>
+  
+  
+  
+  
+ </span><br>
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" name="data(petitionResult)" id="id_petitionResult"
+       value="ogv"/>
+
+<table align=left cellpadding=0 cellspacing=0 style="width:300px; ">
+    
+        
+        
+            
+        
+        <tr>
+            <td align=left style="width: 30px">
+                <input class="checkbox" type="radio" name="radio_group_petitionResult"
+                       id="radio_petitionResult_ogv" selected
+                       onclick="handlePetitionResultClick(this);" value="ogv"/>
+            </td>
+            <td>
+                <b>Получить в ОГВ</b>
+            </td>
+        </tr>
+    
+        
+        
+        <tr>
+            <td align=left style="width: 30px">
+                <input class="checkbox" type="radio" name="radio_group_petitionResult"
+                       id="radio_petitionResult_mfc" 
+                       onclick="handlePetitionResultClick(this);" value="mfc"/>
+            </td>
+            <td>
+                <b>Получить в МФЦ</b>
+            </td>
+        </tr>
+    
+</table>
+
+<script type="text/javascript">
+    var radioButton = document.getElementById("radio_petitionResult_ogv");
+    if (radioButton) {
+        radioButton.checked = true;
+    }
+    if (window.attachEvent) {
+        window.attachEvent("onload", checkPetitionResult);
+    } else {
+        document.addEventListener("DOMContentLoaded", checkPetitionResult, false);
+    }
+
+    function checkPetitionResult() {
+        var res = document.getElementById("id_petitionResult").value;
+        if (res == "mfc") {
+            document.getElementById("row_petitionResultMfc").style.display = '';
+            document.getElementById("row_petitionResultOgv").style.display = 'none';
+        } else if (res == "ogv") {
+            document.getElementById("row_petitionResultMfc").style.display = 'none';
+            document.getElementById("row_petitionResultOgv").style.display = '';
+        }
+
+    }
+
+    function handlePetitionResultClick(input) {
+        var res = input.value;
+        if (res == "mfc") {
+            document.getElementById("row_petitionResultMfc").style.display = '';
+            document.getElementById("row_petitionResultOgv").style.display = 'none';
+            document.getElementById("id_petitionResult").value = 'mfc';
+
+        } else if (res == "ogv") {
+            document.getElementById("row_petitionResultMfc").style.display = 'none';
+            document.getElementById("row_petitionResultOgv").style.display = '';
+            document.getElementById("id_petitionResult").value = 'ogv';
+        }
+    }
+</script>
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr></table>
+  
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_petitionResultOgv" data-view='14'>
+
+
+
+
+  
+    
+    
+      
+      <td width='100%' colspan='5' nowrap
+      id='editattrtd10455792'><span id="attrtitle_petitionResultOgv">
+  <b title="">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10455792@SXAttr' attrName='title'>
+          
+      </span>
+  </b>
+  
+  
+  
+  
+ </span>&nbsp;
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<select tabindex="11" onChange="setChanged()" name="data(petitionResultOgv)"
+        id="id_petitionResultOgv" style="width:300px;  margin-right:5px;"
+        isMandatory="false" attrTitle="">
+  <option value="">-----</option>
+  
+    
+    
+    
+    
+    <option value="242@sprUsznMunOrg" 
+         >Автономное учреждение Ханты-Мансийского автономного округа - Югры  «Социально-оздоровительный центр семьи и детей «Голубое озеро» по г. Нижневартовск</option>
+  
+    
+    
+    
+    
+    <option value="228@sprUsznMunOrg" 
+         >Автономное учреждение Ханты-Мансийского автономного округа – Югры «Социально-оздоровительный центр «Сыновья» по г. Сургут</option>
+  
+    
+    
+    
+    
+    <option value="223@sprUsznMunOrg" 
+         >Автономное учреждение Ханты-Мансийского автономного округа – Югры «Центр комплексной реабилитации ветеранов боевых действий «Возрождение» по г. Нижневартовск</option>
+  
+    
+    
+    
+    
+    <option value="33329@sprUsznMunOrg" 
+         >Администрация города Покачи</option>
+  
+    
+    
+    
+    
+    <option value="600@sprUsznMunOrg" 
+         >Администрация города Сургут</option>
+  
+    
+    
+    
+    
+    <option value="33318@sprUsznMunOrg" 
+         >Администрация города Сургута</option>
+  
+    
+    
+    
+    
+    <option value="33312@sprUsznMunOrg" 
+         >Администрация города Ханты-Мансийска</option>
+  
+    
+    
+    
+    
+    <option value="33323@sprUsznMunOrg" 
+         >Администрация города Югорска</option>
+  
+    
+    
+    
+    
+    <option value="33320@sprUsznMunOrg" 
+         >Администрация Кондинского района</option>
+  
+    
+    
+    
+    
+    <option value="33309@sprUsznMunOrg" 
+         >Администрация муниципального образования город Нягань</option>
+  
+    
+    
+    
+    
+    <option value="33317@sprUsznMunOrg" 
+         >Администрация муниципального образования Ханты-Мансийского автономного округа - Югры Белоярский муниципальный район</option>
+  
+    
+    
+    
+    
+    <option value="33319@sprUsznMunOrg" 
+         >Администрация муниципального образования Ханты-Мансийского автономного округа - Югры городской округ город Когалым</option>
+  
+    
+    
+    
+    
+    <option value="33315@sprUsznMunOrg" 
+         >Администрация муниципального образования Ханты-Мансийского автономного округа - Югры городской округ город Лангепас</option>
+  
+    
+    
+    
+    
+    <option value="33314@sprUsznMunOrg" 
+         >Администрация муниципального образования Ханты-Мансийского автономного округа - Югры городской округ город Нижневартовск</option>
+  
+    
+    
+    
+    
+    <option value="33313@sprUsznMunOrg" 
+         >Администрация муниципального образования Ханты-Мансийского автономного округа - Югры городской округ город Радужный</option>
+  
+    
+    
+    
+    
+    <option value="33324@sprUsznMunOrg" 
+         >Администрация муниципального образования Ханты-Мансийского автономного округа - Югры Нижневартовский муниципальный район</option>
+  
+    
+    
+    
+    
+    <option value="33316@sprUsznMunOrg" 
+         >Администрация муниципального образования Ханты-Мансийского автономного округа - Югры Сургутский район</option>
+  
+    
+    
+    
+    
+    <option value="33311@sprUsznMunOrg" 
+         >Администрация муниципального образования Ханты-Мансийского автономного округа-Югры Березовский муниципальный район</option>
+  
+    
+    
+    
+    
+    <option value="33310@sprUsznMunOrg" 
+         >Администрация муниципального образования Ханты-Мансийского автономного округа-Югры городской округ город Мегион</option>
+  
+    
+    
+    
+    
+    <option value="33308@sprUsznMunOrg" 
+         >Администрация муниципального образования Ханты-Мансийского автономного округа-Югры городской округ город Нефтеюганск</option>
+  
+    
+    
+    
+    
+    <option value="33322@sprUsznMunOrg" 
+         >Администрация муниципального образования Ханты-Мансийского автономного округа-Югры городской округ город Пыть-Ях</option>
+  
+    
+    
+    
+    
+    <option value="33321@sprUsznMunOrg" 
+         >Администрация муниципального образования Ханты-Мансийского автономного округа-Югры городской округ город Урай</option>
+  
+    
+    
+    
+    
+    <option value="333019@sprUsznMunOrg" 
+         >Администрация муниципального образования Ханты-Мансийского автономного округа-Югры Октябрьский муниципальный район</option>
+  
+    
+    
+    
+    
+    <option value="33307@sprUsznMunOrg" 
+         >Администрация Советского района</option>
+  
+    
+    
+    
+    
+    <option value="252@sprUsznMunOrg" 
+         >Бюджетное учреждение  Ханты-Мансийского автономного округа - Югры  «Реабилитационный центр для детей и подростков с ограниченными возможностями  «Добрый волшебник» по г. Сургут</option>
+  
+    
+    
+    
+    
+    <option value="241@sprUsznMunOrg" 
+         >Бюджетное учреждение  Ханты-Мансийского автономного округа - Югры  «Реабилитационный центр для детей и подростков с ограниченными возможностями «Таукси» по г. Нижневартовск</option>
+  
+    
+    
+    
+    
+    <option value="250@sprUsznMunOrg" 
+         >Бюджетное учреждение  Ханты-Мансийского автономного округа - Югры  «Центр помощи детям, оставшимся без попечения родителей «На Калинке» по г. Сургут</option>
+  
+    
+    
+    
+    
+    <option value="251@sprUsznMunOrg" 
+         >Бюджетное учреждение  Ханты-Мансийского автономного округа - Югры  «Центр социальной помощи семье и детям «Зазеркалье» по г. Сургут</option>
+  
+    
+    
+    
+    
+    <option value="257@sprUsznMunOrg" 
+         >Бюджетное учреждение  Ханты-Мансийского автономного округа – Югры «Реабилитационный центр для детей и подростков с ограниченными возможностями «Надежда» по г. Югорск</option>
+  
+    
+    
+    
+    
+    <option value="258@sprUsznMunOrg" 
+         >Бюджетное учреждение  Ханты-Мансийского автономного округа – Югры «Реабилитационный центр для детей и подростков с ограниченными возможностями «Солнышко» по Советскому району</option>
+  
+    
+    
+    
+    
+    <option value="235@sprUsznMunOrg" 
+         >Бюджетное учреждение «Реабилитационный центр для детей и подростков с ограниченными возможностями «Анастасия» по г. Лангепас</option>
+  
+    
+    
+    
+    
+    <option value="248@sprUsznMunOrg" 
+         >Бюджетное учреждение «Реабилитационный центр для детей и подростков с ограниченными возможностями «Цветик-семицветик» по г. Радужный</option>
+  
+    
+    
+    
+    
+    <option value="261@sprUsznMunOrg" 
+         >Бюджетное учреждение социального обслуживания Ханты-Мансийского автономного округа – Югры «Центр социальной помощи семье и детям «Вега» по г. Ханты-Мансийск</option>
+  
+    
+    
+    
+    
+    <option value="202@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты – Мансийского автономного округа - Югры  «Комплексный центр социального обслуживания населения «Альянс» по Березовскому району</option>
+  
+    
+    
+    
+    
+    <option value="232@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты – Мансийского автономного округа - Югры  «Центр социальной помощи семье и детям «Горизонт» по Белоярскому району</option>
+  
+    
+    
+    
+    
+    <option value="233@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты – Мансийского автономного округа - Югры  «Центр социальной помощи семьи и детям «Росток» по Березовскому району</option>
+  
+    
+    
+    
+    
+    <option value="227@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты – Мансийского автономного округа - Югры «Геронтологический центр» по г. Сургут</option>
+  
+    
+    
+    
+    
+    <option value="217@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа - Югры  «Комплексный центр социального обслуживания населения «Импульс» по г. Урай</option>
+  
+    
+    
+    
+    
+    <option value="220@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа - Югры  «Комплексный центр социального обслуживания населения «Светлана» по г. Ханты-Мансийск</option>
+  
+    
+    
+    
+    
+    <option value="247@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа - Югры  «Реабилитационный центр для детей и подростков с ограниченными возможностями «Журавушка» по г. Пыть-Ях</option>
+  
+    
+    
+    
+    
+    <option value="254@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа - Югры  «Центр социальной помощи семье и детям «Апрель» по Сургутскому району</option>
+  
+    
+    
+    
+    
+    <option value="246@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа - Югры  «Центр социальной помощи семье и детям «Гера» по г. Пыть-Ях</option>
+  
+    
+    
+    
+    
+    <option value="256@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа - Югры  «Центр социальной помощи семье и детям «Доверие» по г. Югорск</option>
+  
+    
+    
+    
+    
+    <option value="243@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа - Югры  «Центр социальной помощи семье и детям «Кардея» по г. Нижневартовск</option>
+  
+    
+    
+    
+    
+    <option value="236@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа - Югры  «Центр социальной помощи семье и детям «Наш дом» по г. Мегион</option>
+  
+    
+    
+    
+    
+    <option value="244@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа - Югры  «Центр социальной помощи семье и детям «Родничок» по Нижневартовскому району</option>
+  
+    
+    
+    
+    
+    <option value="230@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Дом-интернат для престарелых и инвалидов «Дарина» по г. Советский</option>
+  
+    
+    
+    
+    
+    <option value="224@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Дом-интернат для престарелых и инвалидов «Отрада» по г. Нижневартовск</option>
+  
+    
+    
+    
+    
+    <option value="231@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Дом-интернат для престарелых и инвалидов «Уют» по г. Ханты-Мансийск</option>
+  
+    
+    
+    
+    
+    <option value="226@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Дом-интернат малой вместимости для граждан пожилого возраста и инвалидов «Родник» по г. Нягань</option>
+  
+    
+    
+    
+    
+    <option value="213@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный центр социального обслуживания населения «Гелиос» по г. Пыть-Ях</option>
+  
+    
+    
+    
+    
+    <option value="215@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный центр социального обслуживания населения «Городская социальная служба» по г. Сургут</option>
+  
+    
+    
+    
+    
+    <option value="205@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный центр социального обслуживания населения «Данко» по г. Лангепас</option>
+  
+    
+    
+    
+    
+    <option value="209@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный центр социального обслуживания населения «Диалог» по г. Нижневартовск</option>
+  
+    
+    
+    
+    
+    <option value="212@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный центр социального обслуживания населения «Доброта» по Октябрьскому району</option>
+  
+    
+    
+    
+    
+    <option value="203@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный центр социального обслуживания населения «Жемчужина» по г. Когалым</option>
+  
+    
+    
+    
+    
+    <option value="208@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный центр социального обслуживания населения «Забота» по Нефтеюганскому району</option>
+  
+    
+    
+    
+    
+    <option value="207@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный центр социального обслуживания населения «Защита» по г. Нефтеюганск</option>
+  
+    
+    
+    
+    
+    <option value="219@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный центр социального обслуживания населения «Ирида» по г. Советский</option>
+  
+    
+    
+    
+    
+    <option value="211@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный центр социального обслуживания населения «Катарсис» по г. Нягань</option>
+  
+    
+    
+    
+    
+    <option value="214@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный центр социального обслуживания населения «Надежда» по г. Радужный</option>
+  
+    
+    
+    
+    
+    <option value="210@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный центр социального обслуживания населения «Радуга» по Нижневартовскому району</option>
+  
+    
+    
+    
+    
+    <option value="216@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа - Югры «Комплексный центр социального обслуживания населения «Содействие» по Сургутскому району</option>
+  
+    
+    
+    
+    
+    <option value="218@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа - Югры «Комплексный центр социального обслуживания населения «Сфера» по г. Югорск</option>
+  
+    
+    
+    
+    
+    <option value="204@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный центр социального обслуживания населения «Фортуна» по Кондинскому району</option>
+  
+    
+    
+    
+    
+    <option value="201@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный цетр социального обслуживания населения «Милосердие» по Белоярскому району</option>
+  
+    
+    
+    
+    
+    <option value="225@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Психоневрологический интернат» по Нижневартовскому району</option>
+  
+    
+    
+    
+    
+    <option value="239@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Реабилитационный центр для детей и подростков с ограниченными возможностями «Дельфин» по Нефтеюганскому району</option>
+  
+    
+    
+    
+    
+    <option value="237@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Реабилитационный центр для детей и подростков с ограниченными возможностями «Детство» по г. Нефтеюганск</option>
+  
+    
+    
+    
+    
+    <option value="259@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Социально-реабилитационный центр для несовершеннолетних «Берегиня»</option>
+  
+    
+    
+    
+    
+    <option value="238@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры «Центр социальной помощи семье и детям «Веста» по г. Нефтеюганск</option>
+  
+    
+    
+    
+    
+    <option value="253@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа - Югры «Центр социальной помощи семье и детям «Юнона» по г. Сургут</option>
+  
+    
+    
+    
+    
+    <option value="255@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа – Югры социально-реабилитационный центр для несовершеннолетних «Зина» по г. Урай</option>
+  
+    
+    
+    
+    
+    <option value="206@sprUsznMunOrg" 
+         >Бюджетное учреждение Ханты-Мансийского автономного округа-Югры «Комплексный центр социального обслуживания населения «Гармония» по г. Мегион</option>
+  
+    
+    
+    
+    
+    <option value="312111@sprUsznMunOrg" 
+         >г. Лянтор Отдел полиции №1</option>
+  
+    
+    
+    
+    
+    <option value="33304@sprUsznMunOrg" 
+         >Государственная инспекция труда в Ханты-Мансийском автономном округе – Югре</option>
+  
+    
+    
+    
+    
+    <option value="25020@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС по ХМАО - Югре г. Белоярский</option>
+  
+    
+    
+    
+    
+    <option value="25023@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО - Югре в городе Ханты-Мансийске</option>
+  
+    
+    
+    
+    
+    <option value="250011@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО - Югре Представительство филиала №1</option>
+  
+    
+    
+    
+    
+    <option value="250051@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО - Югре Представительство филиала №5</option>
+  
+    
+    
+    
+    
+    <option value="25002@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО - Югре Филиал 2</option>
+  
+    
+    
+    
+    
+    <option value="25003@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО - Югре Филиал 3</option>
+  
+    
+    
+    
+    
+    <option value="25004@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО - Югре Филиал 4</option>
+  
+    
+    
+    
+    
+    <option value="25005@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО - Югре Филиал 5</option>
+  
+    
+    
+    
+    
+    <option value="25007@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО - Югре Филиал 7</option>
+  
+    
+    
+    
+    
+    <option value="25001@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО - Югре Филиал № 1</option>
+  
+    
+    
+    
+    
+    <option value="25022@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО - Югре филиал № 1 г. Мегион</option>
+  
+    
+    
+    
+    
+    <option value="25009@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО-Югре ГРС №3 п. Междуреченский</option>
+  
+    
+    
+    
+    
+    <option value="25027@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО-Югре ГРС №4 г.Урай</option>
+  
+    
+    
+    
+    
+    <option value="25008@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО-Югре ГРС п.г.т Березово</option>
+  
+    
+    
+    
+    
+    <option value="25021@sprUsznMunOrg" 
+         >ГУ Региональное отделение ФСС РФ по ХМАО-Югре Филиал № 3 г. Пыть-Ях</option>
+  
+    
+    
+    
+    
+    <option value="11310@sprUsznMunOrg" 
+         >ГУ-Отдел Пенсионного фонда РФ в городе Покачи ХМАО – Югры</option>
+  
+    
+    
+    
+    
+      
+    
+    <option value="11314@sprUsznMunOrg" selected
+         >ГУ-УПРАВЛЕНИЕ ПФР В Г.СУРГУТЕ ХМАО-ЮГРЫ</option>
+  
+    
+    
+    
+    
+    <option value="120@sprUsznMunOrg" 
+         >ГУ-УПФ В ГОР. ХАНТЫ-МАНСИЙСК ХМАО-ЮГРЫ</option>
+  
+    
+    
+    
+    
+    <option value="265@sprUsznMunOrg" 
+         >Департамент дорожного хозяйства и транспорта Ханты-Мансийского автономного округа - Югры</option>
+  
+    
+    
+    
+    
+    <option value="3330155@sprUsznMunOrg" 
+         >Департамент жилищно-коммунального комплекса и энергетики Ханты-Мансийского автономного округа – Югры</option>
+  
+    
+    
+    
+    
+    <option value="264@sprUsznMunOrg" 
+         >Департамент здравоохранения Ханты-Мансийского автономного округа - Югры</option>
+  
+    
+    
+    
+    
+    <option value="89@sprUsznMunOrg" 
+         >Департамент Информационных Технологий</option>
+  
+    
+    
+    
+    
+    <option value="270@sprUsznMunOrg" 
+         >Департамент образования и молодежной политики Ханты-Мансийского автономного округа - Югры</option>
+  
+    
+    
+    
+    
+    <option value="333183@sprUsznMunOrg" 
+         >Департамент образования и молодежной политики Ханты-Мансийского автономного округа – Югры</option>
+  
+    
+    
+    
+    
+    <option value="33305@sprUsznMunOrg" 
+         >Департамент по управлению государственным имуществом ХМАО - Югры</option>
+  
+    
+    
+    
+    
+    <option value="33301@sprUsznMunOrg" 
+         >Департамент природных ресурсов и несырьевого сектора экономики Ханты-Мансийского автономного округа - Югры</option>
+  
+    
+    
+    
+    
+    <option value="268@sprUsznMunOrg" 
+         >Департамент социального развития Ханты-Мансийского автономного округа - Югры</option>
+  
+    
+    
+    
+    
+    <option value="33303@sprUsznMunOrg" 
+         >Департамент строительства Ханты-Мансийского автономного округа - Югры</option>
+  
+    
+    
+    
+    
+    <option value="33302@sprUsznMunOrg" 
+         >Департамент труда и занятости населения Ханты-Мансийского автономного округа - Югры</option>
+  
+    
+    
+    
+    
+    <option value="226301861@sprUsznMunOrg" 
+         >Департамент управления делами Губернатора ХМАО Югры</option>
+  
+    
+    
+    
+    
+    <option value="3330156@sprUsznMunOrg" 
+         >Департамент экономического развития Ханты-Мансийского автономного округа - Югры</option>
+  
+    
+    
+    
+    
+    <option value="411@sprUsznMunOrg" 
+         >ИФНС России по г. Когалыму ХМАО - Югры</option>
+  
+    
+    
+    
+    
+    <option value="425@sprUsznMunOrg" 
+         >ИФНС России по г.Сургуту ХМАО - Югры</option>
+  
+    
+    
+    
+    
+    <option value="410@sprUsznMunOrg" 
+         >ИФНС России по г.Сургуту ХМАО - Югры</option>
+  
+    
+    
+    
+    
+    <option value="412@sprUsznMunOrg" 
+         >ИФНС России по Сургутскому району ХМАО - Югры</option>
+  
+    
+    
+    
+    
+    <option value="5005@sprUsznMunOrg" 
+         >ИЦ УМВД России по Ханты-Мансийскому автономному округу-Югре</option>
+  
+    
+    
+    
+    
+    <option value="249@sprUsznMunOrg" 
+         >Казенное учреждение Ханты-Мансийского автономного округа – Югры  «Детский дом-интернат для детей с физическими и умственными недостатками «Возрождение» по г. Радужный</option>
+  
+    
+    
+    
+    
+    <option value="333@sprUsznMunOrg" 
+         >Казенное учреждение Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат&#034; филиал в городе Лангепасе</option>
+  
+    
+    
+    
+    
+    <option value="229@sprUsznMunOrg" 
+         >Казенное учреждение Ханты-Мансийского автономного округа - Югры «Комплексный социальный центр по оказании помощи лицам без определенного места жительства «Альтернатива» по Сургутскому району</option>
+  
+    
+    
+    
+    
+    <option value="222@sprUsznMunOrg" 
+         >Казенное учреждение Ханты-Мансийского автономного округа – Югры «Комплексный социальный центр по оказанию помощи лицам без определенного места жительства «Луч» по г. Нижневартовск</option>
+  
+    
+    
+    
+    
+    <option value="240@sprUsznMunOrg" 
+         >Казенное учреждение Ханты-Мансийского автономного округа - Югры «Центр социальной адаптации «Феникс» по г. Нижневартовск</option>
+  
+    
+    
+    
+    
+    <option value="221@sprUsznMunOrg" 
+         >Казенное учреждение Ханты-Мансийского автономного округа – Югры «Центр социальной адаптации для лиц без определённого места жительства и занятий «Вектор» по г. Нефтеюганск</option>
+  
+    
+    
+    
+    
+    <option value="156@sprUsznMunOrg" 
+         >Казенное учреждение ХМАО-Югры «Центр социальных выплат» филиал в п. Междуреченский</option>
+  
+    
+    
+    
+    
+    <option value="104@sprUsznMunOrg" 
+         >Казенное учреждение ХМАО-Югры «Центр социальных выплат» филиал в п. Междуреченский</option>
+  
+    
+    
+    
+    
+    <option value="33325@sprUsznMunOrg" 
+         >Комитет жилищно-коммунального хозяйства, транспорта и связи администрации Сургутского района</option>
+  
+    
+    
+    
+    
+    <option value="11104@sprUsznMunOrg" 
+         >Комитет ЗАГС администрации города Нефтеюганска</option>
+  
+    
+    
+    
+    
+    <option value="8@sprUsznMunOrg" 
+         >Комитет опеки и попечительства администрации города Нефтеюганска</option>
+  
+    
+    
+    
+    
+    <option value="6@sprUsznMunOrg" 
+         >Комитет по опеке и попечительству администрации города Сургута</option>
+  
+    
+    
+    
+    
+    <option value="10@sprUsznMunOrg" 
+         >Комитет по опеке и попечительству администрации Нефтеюганского района</option>
+  
+    
+    
+    
+    
+    <option value="115@sprUsznMunOrg" 
+         >КУ &#034;Центр социальных выплат по городу Югорску и Советскому району&#034;</option>
+  
+    
+    
+    
+    
+    <option value="301@sprUsznMunOrg" 
+         >КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в городе Ханты-Мансийске</option>
+  
+    
+    
+    
+    
+    <option value="302@sprUsznMunOrg" 
+         >КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в городе Ханты-Мансийске</option>
+  
+    
+    
+    
+    
+    <option value="86001@sprUsznMunOrg" 
+         >Лянторское  хозяйственно-эксплуатационное управление</option>
+  
+    
+    
+    
+    
+    <option value="401@sprUsznMunOrg" 
+         >Межрайонная ИФНС России №1 по ХМАО - Югре</option>
+  
+    
+    
+    
+    
+    <option value="402@sprUsznMunOrg" 
+         >Межрайонная ИФНС России №2 по ХМАО - Югре</option>
+  
+    
+    
+    
+    
+    <option value="403@sprUsznMunOrg" 
+         >Межрайонная ИФНС России №3 по ХМАО - Югре</option>
+  
+    
+    
+    
+    
+    <option value="404@sprUsznMunOrg" 
+         >Межрайонная ИФНС России №4 по ХМАО - Югре</option>
+  
+    
+    
+    
+    
+    <option value="405@sprUsznMunOrg" 
+         >Межрайонная ИФНС России №5 по ХМАО - Югре</option>
+  
+    
+    
+    
+    
+    <option value="406@sprUsznMunOrg" 
+         >Межрайонная ИФНС России №6 по ХМАО - Югре</option>
+  
+    
+    
+    
+    
+    <option value="407@sprUsznMunOrg" 
+         >Межрайонная ИФНС России №7 по ХМАО - Югре</option>
+  
+    
+    
+    
+    
+    <option value="408@sprUsznMunOrg" 
+         >Межрайонная ИФНС России №8 по ХМАО - Югре</option>
+  
+    
+    
+    
+    
+    <option value="409@sprUsznMunOrg" 
+         >Межрайонная ИФНС России по крупнейшим налогоплательщикам ХМАО - Югры</option>
+  
+    
+    
+    
+    
+    <option value="333022@sprUsznMunOrg" 
+         >Министерство внутренних дел Российской Федерации</option>
+  
+    
+    
+    
+    
+    <option value="5001@sprUsznMunOrg" 
+         >МО МВД России «Ханты-Мансийский»</option>
+  
+    
+    
+    
+    
+    <option value="1@sprUsznMunOrg" 
+         >ОАО &#034;Ханты-Мансийский негосударственный пенсионный фонд&#034;</option>
+  
+    
+    
+    
+    
+    <option value="5003@sprUsznMunOrg" 
+         >ОМВД России по Березовскому району</option>
+  
+    
+    
+    
+    
+    <option value="5006@sprUsznMunOrg" 
+         >ОМВД России по г. Когалыму</option>
+  
+    
+    
+    
+    
+    <option value="5004@sprUsznMunOrg" 
+         >ОМВД России по г. Лангепасу</option>
+  
+    
+    
+    
+    
+    <option value="5017@sprUsznMunOrg" 
+         >ОМВД России по г. Мегиону</option>
+  
+    
+    
+    
+    
+    <option value="5018@sprUsznMunOrg" 
+         >ОМВД России по г. Нефтеюганску</option>
+  
+    
+    
+    
+    
+    <option value="5002@sprUsznMunOrg" 
+         >ОМВД России по г. Нягани</option>
+  
+    
+    
+    
+    
+    <option value="5011@sprUsznMunOrg" 
+         >ОМВД России по г. Пыть-Ях</option>
+  
+    
+    
+    
+    
+    <option value="5016@sprUsznMunOrg" 
+         >ОМВД России по г. Радужному</option>
+  
+    
+    
+    
+    
+    <option value="5008@sprUsznMunOrg" 
+         >ОМВД России по г. Ураю</option>
+  
+    
+    
+    
+    
+    <option value="5009@sprUsznMunOrg" 
+         >ОМВД России по г. Югорску</option>
+  
+    
+    
+    
+    
+    <option value="5012@sprUsznMunOrg" 
+         >ОМВД России по Кондинскому району</option>
+  
+    
+    
+    
+    
+    <option value="5010@sprUsznMunOrg" 
+         >ОМВД России по Нижневартовскому району</option>
+  
+    
+    
+    
+    
+    <option value="5007@sprUsznMunOrg" 
+         >ОМВД России по Октябрьскому району</option>
+  
+    
+    
+    
+    
+    <option value="5019@sprUsznMunOrg" 
+         >ОМВД России по Советскому району</option>
+  
+    
+    
+    
+    
+    <option value="5013@sprUsznMunOrg" 
+         >ОМВД России по Сургутскому району</option>
+  
+    
+    
+    
+    
+    <option value="5021@sprUsznMunOrg" 
+         >ОП №3 МО МВД России &#034;Нижневартовский&#034; (дислокация в г. Покачи)</option>
+  
+    
+    
+    
+    
+    <option value="11202@sprUsznMunOrg" 
+         >ОРУН ОУФМС России по ХМАО-Югре в г. Нижневартовске</option>
+  
+    
+    
+    
+    
+    <option value="11114@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации Белоярского района</option>
+  
+    
+    
+    
+    
+    <option value="11115@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации Берёзовского района</option>
+  
+    
+    
+    
+    
+    <option value="11101@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации города Когалыма</option>
+  
+    
+    
+    
+    
+    <option value="11102@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации города Лангепаса</option>
+  
+    
+    
+    
+    
+    <option value="11103@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации города Мегиона</option>
+  
+    
+    
+    
+    
+    <option value="11106@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации города Нягани</option>
+  
+    
+    
+    
+    
+    <option value="11107@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации города Покачи</option>
+  
+    
+    
+    
+    
+    <option value="11108@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации города Пыть-Яха</option>
+  
+    
+    
+    
+    
+    <option value="11109@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации города Радужный</option>
+  
+    
+    
+    
+    
+    <option value="11111@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации города Урая</option>
+  
+    
+    
+    
+    
+    <option value="11112@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации города Ханты-Мансийска</option>
+  
+    
+    
+    
+    
+    <option value="11113@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации города Югорска</option>
+  
+    
+    
+    
+    
+    <option value="11116@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации Кондинского района</option>
+  
+    
+    
+    
+    
+    <option value="11117@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации Нефтеюганского района</option>
+  
+    
+    
+    
+    
+    <option value="11118@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации Нижневартовского района</option>
+  
+    
+    
+    
+    
+    <option value="11119@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации Октябрьского района</option>
+  
+    
+    
+    
+    
+    <option value="11120@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации Советского района ХМАО-Югры</option>
+  
+    
+    
+    
+    
+    <option value="11121@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации Сургутского района</option>
+  
+    
+    
+    
+    
+    <option value="11122@sprUsznMunOrg" 
+         >Отдел ЗАГС администрации Ханты-Мансийского района</option>
+  
+    
+    
+    
+    
+    <option value="113255@sprUsznMunOrg" 
+         >Отдел опеки и попечительства администрации города Лангепас</option>
+  
+    
+    
+    
+    
+    <option value="27@sprUsznMunOrg" 
+         >Отдел опеки и попечительства администрации города Мегиона</option>
+  
+    
+    
+    
+    
+    <option value="33@sprUsznMunOrg" 
+         >Отдел опеки и попечительства администрации города Нягани</option>
+  
+    
+    
+    
+    
+    <option value="17@sprUsznMunOrg" 
+         >Отдел опеки и попечительства администрации города Покачи</option>
+  
+    
+    
+    
+    
+    <option value="31@sprUsznMunOrg" 
+         >Отдел опеки и попечительства администрации города Пыть-Ях</option>
+  
+    
+    
+    
+    
+    <option value="15@sprUsznMunOrg" 
+         >Отдел опеки и попечительства администрации города Радужный</option>
+  
+    
+    
+    
+    
+    <option value="21@sprUsznMunOrg" 
+         >Отдел опеки и попечительства администрации города Урай</option>
+  
+    
+    
+    
+    
+    <option value="23@sprUsznMunOrg" 
+         >Отдел опеки и попечительства администрации города Югорска</option>
+  
+    
+    
+    
+    
+    <option value="5@sprUsznMunOrg" 
+         >Отдел опеки и попечительства администрации Нижневартовского района</option>
+  
+    
+    
+    
+    
+    <option value="29@sprUsznMunOrg" 
+         >Отдел опеки и попечительства администрации Октябрьского района</option>
+  
+    
+    
+    
+    
+    <option value="25@sprUsznMunOrg" 
+         >Отдел опеки и попечительства администрации Советского района</option>
+  
+    
+    
+    
+    
+    <option value="3@sprUsznMunOrg" 
+         >Отдел опеки и попечительства администрации Ханты-Мансийского района</option>
+  
+    
+    
+    
+    
+    <option value="11@sprUsznMunOrg" 
+         >Отдел по опеке и попечительству администрации Кондинского района</option>
+  
+    
+    
+    
+    
+    <option value="11201@sprUsznMunOrg" 
+         >Отдел УФМС России по ХМАО-Югре в городе Нефтеюганске</option>
+  
+    
+    
+    
+    
+    <option value="11205@sprUsznMunOrg" 
+         >Отдел УФМС России по ХМАО-Югре в городе Покачи</option>
+  
+    
+    
+    
+    
+    <option value="11203@sprUsznMunOrg" 
+         >Отдел УФМС России по ХМАО-Югре в городе Сургуте</option>
+  
+    
+    
+    
+    
+    <option value="555@sprUsznMunOrg" 
+         >Отдел УФМС России по ХМАО-Югре в городе Ханты-Мансийске</option>
+  
+    
+    
+    
+    
+    <option value="11204@sprUsznMunOrg" 
+         >Отдел УФМС России по ХМАО-Югре в Сургутском районе</option>
+  
+    
+    
+    
+    
+    <option value="11221@sprUsznMunOrg" 
+         >Отделение в г. Лянтор отдела УФМС России по ХМАО-Югре в Сургутском районе</option>
+  
+    
+    
+    
+    
+    <option value="11206@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в Березовском районе</option>
+  
+    
+    
+    
+    
+    <option value="11207@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в городе Белоярском</option>
+  
+    
+    
+    
+    
+    <option value="11208@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в городе Когалыме</option>
+  
+    
+    
+    
+    
+    <option value="11209@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в городе Лангепасе</option>
+  
+    
+    
+    
+    
+    <option value="11210@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в городе Мегионе</option>
+  
+    
+    
+    
+    
+    <option value="11211@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в городе Нягань</option>
+  
+    
+    
+    
+    
+    <option value="11212@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в городе Пыть-Ях</option>
+  
+    
+    
+    
+    
+    <option value="11213@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в городе Радужный</option>
+  
+    
+    
+    
+    
+    <option value="11214@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в городе Урае</option>
+  
+    
+    
+    
+    
+    <option value="11215@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в городе Югорске</option>
+  
+    
+    
+    
+    
+    <option value="11216@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в Кондинском районе</option>
+  
+    
+    
+    
+    
+    <option value="11217@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в Нефтеюганском районе</option>
+  
+    
+    
+    
+    
+    <option value="11220@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в Нижневартовском районе</option>
+  
+    
+    
+    
+    
+    <option value="11218@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в Октябрьском районе</option>
+  
+    
+    
+    
+    
+    <option value="11219@sprUsznMunOrg" 
+         >Отделение УФМС России по ХМАО-Югре в Советском районе</option>
+  
+    
+    
+    
+    
+    <option value="263@sprUsznMunOrg" 
+         >Правительство Ханты-Мансийского автономного округа - Югры</option>
+  
+    
+    
+    
+    
+    <option value="33306@sprUsznMunOrg" 
+         >Служба государственного надзора за техническим состоянием самоходных машин и других видов техники Ханты-Мансийского автономного округа - Югры</option>
+  
+    
+    
+    
+    
+    <option value="3330157@sprUsznMunOrg" 
+         >Служба государственной охраны объектов культурного наследия Ханты-Мансийского автономного округа - Югры</option>
+  
+    
+    
+    
+    
+    <option value="11123@sprUsznMunOrg" 
+         >Служба ЗАГС Администрации городского поселения Лянтор</option>
+  
+    
+    
+    
+    
+    <option value="262@sprUsznMunOrg" 
+         >Территариальное управление федерального агенства по управлению государственным имуществом в ХМАО-ЮГРЕ</option>
+  
+    
+    
+    
+    
+    <option value="814@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Белоярский</option>
+  
+    
+    
+    
+    
+    <option value="815@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Березово</option>
+  
+    
+    
+    
+    
+    <option value="813@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Когалым</option>
+  
+    
+    
+    
+    
+    <option value="811@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Лангепас</option>
+  
+    
+    
+    
+    
+    <option value="805@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Мегион</option>
+  
+    
+    
+    
+    
+    <option value="816@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Междуреченск</option>
+  
+    
+    
+    
+    
+    <option value="803@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Нефтеюганск</option>
+  
+    
+    
+    
+    
+    <option value="801@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Нижневартовск</option>
+  
+    
+    
+    
+    
+    <option value="808@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Покачи</option>
+  
+    
+    
+    
+    
+    <option value="806@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Пыть-Ях</option>
+  
+    
+    
+    
+    
+    <option value="812@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Радужный</option>
+  
+    
+    
+    
+    
+    <option value="804@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Советский</option>
+  
+    
+    
+    
+    
+    <option value="802@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Сургут</option>
+  
+    
+    
+    
+    
+    <option value="809@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Урай</option>
+  
+    
+    
+    
+    
+    <option value="807@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии  по ХМАО-Югре в городе Югорск</option>
+  
+    
+    
+    
+    
+    <option value="810@sprUsznMunOrg" 
+         >Территориальный отдел Управления Федеральной службы государственной регистрации, кадастра и картографии по ХМАО-Югре в городе Нягань и по Октябрьскому району</option>
+  
+    
+    
+    
+    
+    <option value="11222@sprUsznMunOrg" 
+         >ТП в пос.Федоровский ОУФМС России по ХМАО-Югре в Сургутском районе</option>
+  
+    
+    
+    
+    
+    <option value="11223@sprUsznMunOrg" 
+         >ТП в с.п.Солнечный ОУФМС России по ХМАО-Югре в Сургутском районе</option>
+  
+    
+    
+    
+    
+    <option value="51121@sprUsznMunOrg" 
+         >ТП пос. Пионерский ОУ ФМС России по ХМАО-Югре в Советском районе</option>
+  
+    
+    
+    
+    
+    <option value="25065@sprUsznMunOrg" 
+         >ТУ Росимущества по ХМАО - Югре</option>
+  
+    
+    
+    
+    
+    <option value="5015@sprUsznMunOrg" 
+         >УМВД России по г. Нижневартовску</option>
+  
+    
+    
+    
+    
+    <option value="5014@sprUsznMunOrg" 
+         >УМВД России по г. Сургуту</option>
+  
+    
+    
+    
+    
+    <option value="269@sprUsznMunOrg" 
+         >Управление бюджетного учета и отчетности Администрации города Сургута</option>
+  
+    
+    
+    
+    
+    <option value="11105@sprUsznMunOrg" 
+         >Управление ЗАГС администрации города Нижневартовска</option>
+  
+    
+    
+    
+    
+    <option value="11110@sprUsznMunOrg" 
+         >Управление ЗАГС администрации города Сургута</option>
+  
+    
+    
+    
+    
+    <option value="333212@sprUsznMunOrg" 
+         >Управление образования администрации города Покачи</option>
+  
+    
+    
+    
+    
+    <option value="333211@sprUsznMunOrg" 
+         >Управление образования администрации Кондинского района</option>
+  
+    
+    
+    
+    
+    <option value="2005@sprUsznMunOrg" 
+         >Управление образования администрации Советского района</option>
+  
+    
+    
+    
+    
+    <option value="13@sprUsznMunOrg" 
+         >Управление опеки и попечительства администрации Белоярского района</option>
+  
+    
+    
+    
+    
+    <option value="19@sprUsznMunOrg" 
+         >Управление опеки и попечительства администрации Березовского района</option>
+  
+    
+    
+    
+    
+    <option value="32@sprUsznMunOrg" 
+         >Управление опеки и попечительства администрации города Когалыма</option>
+  
+    
+    
+    
+    
+    <option value="11303@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в Березовском районе ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="11302@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в городе Белоярский ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="11304@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в городе Когалыме ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="11305@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в городе Лангепасе ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="11306@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в городе Мегионе ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="11307@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в городе Нефтеюганске ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="11309@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в городе Нягани ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="11312@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в городе Пыть-Яхе ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="11311@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в городе Радужный ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="11316@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в городе Урае ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="11301@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в городе Ханты-Мансийске ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="11318@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в городе Югорске ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="11317@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в Кондинском районе ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="11313@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в Октябрьском районе ХМАО– Югры</option>
+  
+    
+    
+    
+    
+    <option value="11315@sprUsznMunOrg" 
+         >Управление Пенсионного фонда РФ в Советском районе ХМАО – Югры</option>
+  
+    
+    
+    
+    
+    <option value="4@sprUsznMunOrg" 
+         >Управление по опеке и попечительству администрации города Нижневартовска</option>
+  
+    
+    
+    
+    
+    <option value="109@sprUsznMunOrg" 
+         >Управление социальной защиты населения  по городу Нягани и Октябрьскому району</option>
+  
+    
+    
+    
+    
+    <option value="102@sprUsznMunOrg" 
+         >Управление социальной защиты населения по Березовскому району</option>
+  
+    
+    
+    
+    
+    <option value="101@sprUsznMunOrg" 
+         >Управление социальной защиты населения по городу Белоярский и району</option>
+  
+    
+    
+    
+    
+    <option value="103@sprUsznMunOrg" 
+         >Управление социальной защиты населения по городу Когалыму</option>
+  
+    
+    
+    
+    
+    <option value="105@sprUsznMunOrg" 
+         >Управление социальной защиты населения по городу Лангепасу и городу Покачи</option>
+  
+    
+    
+    
+    
+    <option value="106@sprUsznMunOrg" 
+         >Управление социальной защиты населения по городу Мегиону</option>
+  
+    
+    
+    
+    
+    <option value="107@sprUsznMunOrg" 
+         >Управление социальной защиты населения по городу Нефтеюганску и Нефтеюганскому району</option>
+  
+    
+    
+    
+    
+    <option value="108@sprUsznMunOrg" 
+         >Управление социальной защиты населения по городу Нижневартовску и Нижневартовскому району</option>
+  
+    
+    
+    
+    
+    <option value="110@sprUsznMunOrg" 
+         >Управление социальной защиты населения по городу Пыть-Ях</option>
+  
+    
+    
+    
+    
+    <option value="111@sprUsznMunOrg" 
+         >Управление социальной защиты населения по городу Радужный</option>
+  
+    
+    
+    
+    
+    <option value="112@sprUsznMunOrg" 
+         >Управление социальной защиты населения по городу Сургуту и Сургутскому району</option>
+  
+    
+    
+    
+    
+    <option value="113@sprUsznMunOrg" 
+         >Управление социальной защиты населения по городу Ураю</option>
+  
+    
+    
+    
+    
+    <option value="114@sprUsznMunOrg" 
+         >Управление социальной защиты населения по городу Ханты-Мансийску и Ханты-Мансийскому району</option>
+  
+    
+    
+    
+    
+    <option value="345@sprUsznMunOrg" 
+         >Управление Федеральной службы судебных приставов по Ханты-Мансийскому автономному округу - Югре</option>
+  
+    
+    
+    
+    
+    <option value="11308@sprUsznMunOrg" 
+         >УПФР в г. Нижневартовске ХМАО-Югры</option>
+  
+    
+    
+    
+    
+    <option value="245@sprUsznMunOrg" 
+         >Учреждение социального обслуживания Ханты-Мансийского автономного округа – Югры «Реабилитационный центр для детей и подростков с ограниченными возможностями   «Гармония» по г. Нягань</option>
+  
+    
+    
+    
+    
+    <option value="260@sprUsznMunOrg" 
+         >Учреждение социального обслуживания Ханты-Мансийского автономного округа – Югры «Реабилитационный центр для детей и подростков с ограниченными возможностями «Лучик» по г. Ханты-Мансийск</option>
+  
+    
+    
+    
+    
+    <option value="267@sprUsznMunOrg" 
+         >Федеральная миграционная служба</option>
+  
+    
+    
+    
+    
+    <option value="12@sprUsznMunOrg" 
+         >Филиал КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в городе Белоярском</option>
+  
+    
+    
+    
+    
+    <option value="313@sprUsznMunOrg" 
+         >Филиал КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в городе Когалыме</option>
+  
+    
+    
+    
+    
+    <option value="344@sprUsznMunOrg" 
+         >Филиал КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в городе Мегионе</option>
+  
+    
+    
+    
+    
+    <option value="355@sprUsznMunOrg" 
+         >Филиал КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в городе Нефтеюганске</option>
+  
+    
+    
+    
+    
+    <option value="366@sprUsznMunOrg" 
+         >Филиал КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в городе Нижневартовске</option>
+  
+    
+    
+    
+    
+    <option value="303@sprUsznMunOrg" 
+         >Филиал КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в городе Нижневартовске</option>
+  
+    
+    
+    
+    
+    <option value="311@sprUsznMunOrg" 
+         >Филиал КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в городе Нягань</option>
+  
+    
+    
+    
+    
+    <option value="314@sprUsznMunOrg" 
+         >Филиал КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в городе Пыть-Яхе</option>
+  
+    
+    
+    
+    
+    <option value="309@sprUsznMunOrg" 
+         >Филиал КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в городе Радужном</option>
+  
+    
+    
+    
+    
+    <option value="331@sprUsznMunOrg" 
+         >Филиал КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в городе Урае</option>
+  
+    
+    
+    
+    
+    <option value="318@sprUsznMunOrg" 
+         >Филиал КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в городе Югорске</option>
+  
+    
+    
+    
+    
+    <option value="315@sprUsznMunOrg" 
+         >Филиал КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в поселке Березово</option>
+  
+    
+    
+    
+    
+    <option value="316@sprUsznMunOrg" 
+         >Филиал КУ Ханты-Мансийского автономного округа - Югры &#034;Центр социальных выплат Югры&#034; в поселке Междуреченский</option>
+  
+    
+    
+    
+    
+    <option value="304@sprUsznMunOrg" 
+         >Центр социальных выплат филиал в г.Сургуте</option>
+  
+    
+    
+    
+    
+    <option value="234@sprUsznMunOrg" 
+         >юджетное учреждение Ханты-Мансийского автономного округа – Югры «Центр социальной помощи семье и детям «Радуга надежды» по г. Когалым</option>
+  
+</select>
+<nobr><span id="buttons_petitionResultOgv">
+	
+		
+		
+		
+	
+</span></nobr>
+
+
+
+    
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+
+
+
+
+ <tr id="row_petitionResultMfc" data-view='14'>
+
+
+
+
+  
+    
+    
+      
+      <td width='100%' colspan='5' nowrap
+      id='editattrtd10455793'><span id="attrtitle_petitionResultMfc">
+  <b title="">
+      <span
+        
+          
+          
+          class='eattr' type='string' readonly='false' objId='10455793@SXAttr' attrName='title'>
+          
+      </span>
+  </b>
+  
+  
+  
+  
+ </span>&nbsp;
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<select tabindex="11" onChange="setChanged()" name="data(petitionResultMfc)"
+        id="id_petitionResultMfc" style="width:300px;  margin-right:5px;"
+        isMandatory="false" attrTitle="">
+  <option value="">-----</option>
+  
+    
+    
+    
+    
+    <option value="mfc_nyagan@mfcOffice" 
+         >&#034;МФЦ г. Нягань&#034;</option>
+  
+    
+    
+    
+    
+    <option value="mfc_berezovo@mfcOffice" 
+         >&#034;МФЦ&#034; г. Берёзово</option>
+  
+    
+    
+    
+    
+    <option value="mfc_hm@mfcOffice" 
+         >АУ &#034;МФЦ Югры&#034; г. Ханты-Мансийск</option>
+  
+    
+    
+    
+    
+    <option value="mfc_langepas@mfcOffice" 
+         >ЛГ МБУ &#034;МФЦ&#034;</option>
+  
+    
+    
+    
+    
+    <option value="mfc_beloyarsk@mfcOffice" 
+         >МАУ &#034;Белоярский МФЦ&#034;</option>
+  
+    
+    
+    
+    
+    <option value="mfc_kogalym@mfcOffice" 
+         >МАУ &#034;МФЦ г. Когалым&#034;</option>
+  
+    
+    
+    
+    
+    <option value="mfc_octyabrskij_raj@mfcOffice" 
+         >МАУ &#034;МФЦ Октябрьского района&#034;</option>
+  
+    
+    
+    
+    
+    <option value="mfc_urai@mfcOffice" 
+         >МАУ &#034;МФЦ&#034; г. Урай</option>
+  
+    
+    
+    
+    
+    <option value="mfc_yugorsk@mfcOffice" 
+         >МАУ &#034;МФЦ&#034; г. Югорск</option>
+  
+    
+    
+    
+    
+    <option value="mfc_pokachi@mfcOffice" 
+         >МАУ МФЦ &#034;Мои документы&#034;</option>
+  
+    
+    
+    
+    
+    <option value="mfc_izluchinsk@mfcOffice" 
+         >МАУ НВ &#034;МФЦ&#034;</option>
+  
+    
+    
+    
+    
+    <option value="mfc_pityh@mfcOffice" 
+         >МБУ &#034;МФЦ г. Пыть-Яха&#034;</option>
+  
+    
+    
+    
+    
+    <option value="mfc_kond@mfcOffice" 
+         >МБУ Кондинского района МФЦ</option>
+  
+    
+    
+    
+    
+      
+    
+    <option value="mfc_lyantor@mfcOffice" selected
+         >МКУ &#034;МФЦ г. Лянтор Сургутского района&#034;</option>
+  
+    
+    
+    
+    
+    <option value="mfc_raduzhniy@mfcOffice" 
+         >МКУ &#034;МФЦ г. Радужный&#034;</option>
+  
+    
+    
+    
+    
+    <option value="mfc_surgut@mfcOffice" 
+         >МКУ &#034;МФЦ г. Сургута&#034;</option>
+  
+    
+    
+    
+    
+    <option value="mfc_surg_rai@mfcOffice" 
+         >МКУ &#034;МФЦ Сургутского района&#034;</option>
+  
+    
+    
+    
+    
+    <option value="mfc_megion@mfcOffice" 
+         >МКУ &#034;МФЦ&#034; г. Мегион</option>
+  
+    
+    
+    
+    
+    <option value="mfc_nijnevartovsk@mfcOffice" 
+         >МКУ &#034;Нижневартовский МФЦ&#034;</option>
+  
+    
+    
+    
+    
+    <option value="mfc_nefteugansk@mfcOffice" 
+         >МУ &#034;МФЦ&#034; г. Нефтеюганск</option>
+  
+    
+    
+    
+    
+    <option value="MFC_Soviet@mfcOffice" 
+         >МФЦ г. Советский</option>
+  
+    
+    
+    
+    
+    <option value="mfc_ruspost@mfcOffice" 
+         >Почта России (Советский район)</option>
+  
+    
+    
+    
+    
+    <option value="mfc_testhm@mfcOffice" 
+         >Тестовый МФЦ</option>
+  
+</select>
+<nobr><span id="buttons_petitionResultMfc">
+	
+		
+		
+		
+	
+</span></nobr>
+
+
+
+    
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </td></tr>
+                          <tr><td colspan="10">
+
+	
+	
+	
+
+		
+		
+		
+		
+		
+	</td>
+</tr>
+                        </table>
+                      
+                    </div><!--//group_10362525-->
+                    
+                  
+                
+              
+              
+              
+            
+           
+            
+              
+               
+                
+                  
+                  
+                    <div id="group_10359779"
+                         loaded="false"  style="display:none;" 
+                         title="Межведомственные запросы">
+                      
+                    </div><!--//group_10359779-->
+                    
+                  
+                
+              
+              
+              
+            
+           
+            
+              
+               
+                
+                  
+                  
+                    <div id="group_10361286"
+                         loaded="false"  style="display:none;" 
+                         title="Продление срока обработки заявления">
+                      
+                    </div><!--//group_10361286-->
+                    
+                  
+                
+              
+              
+              
+            
+           
+            
+              
+               
+                
+                  
+                  
+                    <div id="group_10361244"
+                         loaded="false"  style="display:none;" 
+                         title="Результат оказания услуги">
+                      
+                    </div><!--//group_10361244-->
+                    
+                  
+                
+              
+              
+              
+            
+           
+            
+              
+               
+                
+                  
+                  
+                    <div id="group_10362925"
+                         loaded="false"  style="display:none;" 
+                         title="Отказ">
+                      
+                    </div><!--//group_10362925-->
+                    
+                  
+                
+              
+              
+              
+            
+           
+            
+              
+               
+                
+                  
+                  
+                    <div id="group_10362769"
+                         loaded="false"  style="display:none;" 
+                         title="История изменений">
+                      
+                    </div><!--//group_10362769-->
+                    
+                  
+                
+              
+              
+              
+            
+           
+            
+              
+               
+                
+                  
+                  
+                    <div id="group_10364425"
+                         loaded="false"  style="display:none;" 
+                         title="Документы">
+                      
+                    </div><!--//group_10364425-->
+                    
+                  
+                
+              
+              
+              
+            
+           
+            
+              
+               
+                
+                  
+                  
+                    <div id="group_10726476"
+                         loaded="false"  style="display:none;" 
+                         title="Росреестр">
+                      
+                    </div><!--//group_10726476-->
+                    
+                  
+                
+              
+              
+              
+            
+           
+            
+              
+               
+                
+                  
+                  
+                    <div id="group_10362842"
+                         loaded="false"  style="display:none;" 
+                         title="Контроль">
+                      
+                    </div><!--//group_10362842-->
+                    
+                  
+                
+              
+              
+              
+            
+           
+            
+              
+               
+                
+                  
+                  
+                    <div id="group_10358595"
+                         loaded="false"  style="display:none;" 
+                         title="Системные">
+                      
+                    </div><!--//group_10358595-->
+                    
+                  
+                
+              
+              
+              
+            
+           
+            
+              
+                
+              
+              
+              
+              
+            
+          
+          
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+</div>
+
+
+
+        
+
+        
+
+        <input type="hidden" name="refreshUrlDenyFields" value="">
+      </div>
+      <!--/FORM_ATTRS_DATA_CUT-->
+    </form>
+    <br>
+  </div>
+</div>
+<script type="text/javascript">
+  var mfr = $('modified');
+  if (mfr != null && mfr.form != null && mfr.form.modified.value == "true") displayDialog = true;
+</script>
+
+
+
+<!-- Делаем активные подгруппы -->
+<input type="hidden" id="__objectId" value="910019@mfcSocServPetition"/>
+<script type="text/javascript">
+  var object = new PubObject("obj_" + $("__objectId").value + "_body");
+
+  
+
+  
+  if (self.setFormFocus) setFormFocus("obj_910019@mfcSocServPetition_form");
+</script>
+
+<script type="text/javascript" src="http://148.251.88.9:8080/mfc_hmao/admin/scripts/attractions.js"></script>
+
+<script type="text/javascript">
+setFormBinders(document.getElementById('obj_910019@mfcSocServPetition_form'), 'mfcSocServPetition', '910019@mfcSocServPetition');
+</script><br /></td>
+</tr>
+</table>
+<div id="outwork"></div>
+<div id="out"></div>
+</td>
+</tr>
+</table>
+<div id="toolbar_content" style="display:none">
+	<table class="toolbar" cellpadding="0" cellspacing="0">
+	<tr>
+		<td id="utilsZone"><script type="text/javascript">
+       toolbarZones.push(new toolbarZone("tab_util_bp_1", "img_util_bp_1", true));
+    </script>
+    <table cellpadding="0" cellspacing="0" align="left">
+    <tr>
+      <td>
+        <div class="tb_collaps_off" id="img_util_bp_1" onclick="collapsToolBar(this,'tab_util_bp_1')">&nbsp;</div>
+      </td>
+      <td>
+        <table cellpadding="0" cellspacing="0" width="100%" align="center" border="0" id="tab_util_bp_1">
+        <tr>
+          <td class="menu" valign="middle" align="center">
+            <input type="hidden" name="reserved_place"/>
+          </td>
+          <td>
+            <div class="tb_separator">&nbsp;</div>
+          </td>
+
+          <script type="text/javascript">
+  function createReport(defValue, reportId) {
+    var value = null;
+    var idArray = getSelObjects()[0];
+    if (idArray && idArray.length > 0) {
+      value = idArray.join();
+    } else {
+      value = defValue;
+    }
+    var p = new Array();
+    p[p.length] = new postParamsPares("paramsHashCode", "0");
+    p[p.length] = new postParamsPares("objId", value);
+    p[p.length] = new postParamsPares("exeptionObjIds", exceptionObjIds());
+    p[p.length] = new postParamsPares("folderId", defValue);
+    p[p.length] = new postParamsPares("sessionParams", getSelectAllSelected());
+    p[p.length] = new postParamsPares("link", '');
+    p[p.length] = new postParamsPares("reportId", reportId);
+    p[p.length] = new postParamsPares("designCode", 'console');
+    sendPostInNewWindow("http://148.251.88.9:8080/mfc_hmao/mfc/createpetitionreport.sx", p, null, "550", "400");
+  }
+</script>
+
+  
+
+        
+      
+    
+
+      
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td class="menu">
+    <button id="sendPetitonBtn" onmouseover="this.className='work_active'" onmouseout="this.className='work'" class=work
+            type="button"
+            onclick="execCommonUtil(&#039;sendPetition&#039;,&#039;mfc/sendpetition.sx&#039;,{&#039;folderID&#039;:&#039;910019@mfcSocServPetition&#039;,&#039;designCode&#039;:&#039;console&#039;,&#039;paramsHashCode&#039;:&#039;&#039;});">
+        <table cellpadding=0 cellspacing=0>
+            <tr>
+                <td valign=top style="padding-right:3px;">
+                    <img src='http://148.251.88.9:8080/mfc_hmao/admin/icons/i1.gif' width=16 height=16>&nbsp;</td>
+                <td valign=top style="padding-top:1px;" nowrap>Отправить заявление</td>
+            </tr>
+        </table>
+    </button>
+</td>
+
+        
+      
+    
+
+      
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td class="menu">
+    <button onmouseover="this.className='work_active'" onmouseout="this.className='work'" class=work
+            type="button"
+            onclick="execCommonUtil('signpetitionprintform','util/signpetitionprintform.sx',{'folderID':'910019@mfcSocServPetition','designCode':'console','paramsHashCode':''});return getFalse(event);">
+        <table cellpadding=0 cellspacing=0>
+            <tr>
+                <td valign=top style="padding-right:3px;">
+                    <img src='http://148.251.88.9:8080/mfc_hmao/admin/icons/i1.gif' width=16 height=16>&nbsp;</td>
+                <td valign=top style="padding-top:1px;" nowrap>Подписание печатной формы заявления</td>
+            </tr>
+        </table>
+    </button>
+</td>
+
+
+
+        
+      
+    
+
+      
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+    
+
+      
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+    
+
+      
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+    
+
+      
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+    
+
+      
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+    
+
+      
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+    
+
+      
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+    
+
+      
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+    
+
+      
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function openPetition() {
+        window.open('http://148.251.88.9:8080/mfc_hmao/hmao/multipleservices.htm?id=621104@multipleServicePetition&activePetitionId=910019@mfcSocServPetition', '_blank', 'width=1000,resizable=1,scrollbars=1');
+    }
+</script>
+<td class="menu">
+    <button onmouseover="this.className='work_active'" onmouseout="this.className='work'" class=work
+            type="button" onclick='openPetition()'>
+        <table cellpadding=0 cellspacing=0>
+            <tr>
+                <td valign=top style="padding-right:3px;">
+                    <img src='http://148.251.88.9:8080/mfc_hmao/admin/icons/i207.gif' width=16 height=16>&nbsp;</td>
+                <td valign=top style="padding-top:1px;" nowrap>Редактировать заявление</td>
+            </tr>
+        </table>
+    </button>
+</td>
+
+        
+      
+    
+
+      
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td class="menu">
+    <button onmouseover="this.className='work_active'" onmouseout="this.className='work'" class=work
+            type="button"
+            onclick="execCommonUtil('mfcespverify','util/mfcespverify.sx',{'folderID':'910019@mfcSocServPetition','designCode':'console','paramsHashCode':''});return getFalse(event);">
+        <table cellpadding=0 cellspacing=0>
+            <tr>
+                <td valign=top style="padding-right:3px;">
+                    <img src='http://148.251.88.9:8080/mfc_hmao/admin/icons/i1.gif' width=16 height=16>&nbsp;</td>
+                <td valign=top style="padding-top:1px;" nowrap>Проверить ЭЦП</td>
+            </tr>
+        </table>
+    </button>
+</td>
+
+
+
+        
+      
+    
+
+      
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function printdocs() {
+        window.open("http://148.251.88.9:8080/mfc_hmao/mfc/printdocs.sx?objId=910019@mfcSocServPetition&designCode=console","_blank","height=150,width=450,status=no,toolbar=no,menubar=no,location=no,resizable=no,channelmode=no,left=400,top=200");
+    }
+</script>
+<td class="menu">
+    <button onmouseover="this.className='work_active'" onmouseout="this.className='work'" class=work title="Печать документов"
+            type="button" onclick='printdocs()'>
+        <table cellpadding=0 cellspacing=0>
+            <tr>
+                <td valign=top style="padding-right:3px;">
+                <img src='http://148.251.88.9:8080/mfc_hmao/admin/icons/i250.gif' width=16 height=16>&nbsp;</td>
+                <td valign=top style="padding-top:1px;" nowrap>Печать документов</td>
+            </tr>
+        </table>
+    </button>
+</td>
+
+          <td width="100%">&nbsp;</td>
+        </tr>
+        </table>
+      </td>
+      <td>
+        <div class="tb_zone_right">&nbsp;</div>
+      </td>
+    </tr>
+    </table></td>
+		<td style="padding:0 0 0 2px; width:100%"><div id="in"></div></td>
+		<td>
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td class="menu" id="helpZone"></td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+</div>
+</body>
+<script type="text/javascript">
+  manageToolbarContents();      //look to the end of admin/scripts/editobject.js
+	if (self.placeTheDeleteButton) self.placeTheDeleteButton();
+  top.status='login: "AvhimkovDV" sessions: 1';
+</script>
+
+
+
+
+
+<script type="text/javascript">
+  var refreshUrlPost = false;
+  var refreshUrl = 'http://148.251.88.9:8080/mfc_hmao/admin/edit.htm?id=910019@mfcSocServPetition';
+</script>
+<script type="text/javascript" src="admin/arm/current_url.js"></script>
+
+</html>
