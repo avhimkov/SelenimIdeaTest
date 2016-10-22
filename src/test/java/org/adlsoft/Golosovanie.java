@@ -7,12 +7,33 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 
 import java.lang.*;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Golosovanie {
-
+    WebDriver driver = new ChromeDriver();
     @Test
     public void testCase() throws IOException, InterruptedException {
 //      Голосование
+
+        driver.navigate().to("http://148.251.88.9:8080/mfc_hmao/admin/edit.htm?id=910019@mfcSocServPetition");
+        List<WebElement> allAuthors =  driver.findElements(By.className("blabala"));
+        List<WebElement> allTitles =  driver.findElements(By.className("blabala"));
+        int i=0;
+        String fileText = "";
+
+        for (WebElement author : allAuthors){
+            String authorName = author.getText();
+            String Url = (String)((JavascriptExecutor)driver).executeScript("return arguments[0].innerHTML;", allTitles.get(i++));
+            final Pattern pattern = Pattern.compile("title=(.+?)>");
+            final Matcher matcher = pattern.matcher(Url);
+            matcher.find();
+            String title = matcher.group(1);
+            fileText = fileText+authorName+","+title+"\n";
+        }
+//        String text = driver.findElement(By.css("h1")).getText();
+
         String line;
         BufferedReader reader = new BufferedReader(new FileReader("src/csv/golos.csv"));
         System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
