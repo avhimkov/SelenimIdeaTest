@@ -1,24 +1,21 @@
 package org.adlsoft;
 
-import javax.swing.text.html.parser.Parser;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-
-/**
- * Created by adl on 22.10.2016.
- */
 public class PsrserSistem {
     public static void main(String[] args) throws IOException {
+
         File input = new File("src/html/MFC12.html");
-        Document doc = Jsoup.parse(input,"UTF-8");
+        Document doc = Jsoup.parse(input, "UTF-8");
         Elements tableRows = doc.getElementsByTag("td");
 //        Elements links = doc.getElementsByTag("a");
 
@@ -31,17 +28,22 @@ public class PsrserSistem {
 //                System.out.print(elementText + " ");
 //            }
 //        }
-        //get each row to content without header
-        for(Element row : tableRows)
-        {
-            Elements tableCells=row.getElementsByTag("td");
-            //iterate over each element
-
-                //get text content of each cell element
-                String elementText = tableCells.text();
-                //print out the content
-                System.out.print(elementText + " ");
-            System.out.println();
+//        List<String> text = new ArrayList<>();
+        for (Element row : tableRows) {
+            Elements tableCells = row.getElementsByTag("td");
+            String[] elementText = tableCells.text().split(" ");
+            System.out.print(elementText[23] + " ");
         }
+
+//        List<String> list = new ArrayList<>();
+//        try (Stream<String> stream = Files.lines(Paths.get(put), Charset.forName("windows-1251"))) {
+//            list = stream
+//                    .filter(line -> line.contains(numberWindow))
+//                    .filter(line -> line.contains(findeSring))
+//                    .collect(Collectors.toList());
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        list.forEach(System.out::println);
     }
 }
