@@ -2,47 +2,35 @@ package org.adlsoft;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-//import java.util.stream.Collectors;
-//import java.util.stream.Stream;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class PsrserSistem {
     public static void main(String[] args) throws IOException {
 
-//      "../MFC12.html");
-        Document doc = Jsoup.parse(new File("src/html/MFC12.html"), "UTF-8");
-        Elements tableRows = doc.getElementsByTag("tr");
+        Document doc = Jsoup.parse(new File("src/html/MFC12.html"), "UTF-8"); //"../MFC12.html");
+        Pattern pattern = Pattern.compile("^MFC\\w[0-9]\\d{2}-[0-9]\\d{6}-[0-9]\\d]+$");
 
         try {
-            for (Element row : tableRows) {
-                Elements tableCells = row.getElementsByTag("tr");
-                String elementText = tableCells.text();
-                String[] arrstring = elementText.split(" ");
-                int result = elementText.indexOf("MFC");
-                String text = elementText.substring(result, result+14);
-                System.out.println(text);
-            }
-        } catch (ArrayIndexOutOfBoundsException e) {
+            Elements tableRows = doc.getElementsByTag("tr");
+            String elementText = tableRows.text();
+
+            Matcher matcher = pattern.matcher(elementText);
+
+            int result = elementText.lastIndexOf("MFC");
+            int result1 = elementText.indexOf("10");
+            String text = elementText.substring(result, result + 14);
+//            String text1 = elementText.substring(result1, result1 + 5);
+            System.out.println(text);
+//            System.out.println(text1);
+            System.out.println(elementText.substring(matcher.start(), matcher.end()));
+        } catch (StringIndexOutOfBoundsException e) {
 //            e.printStackTrace();
 //            System.out.println("Error");
         }
-
-//        for(Element row : tableRows) {
-//            Elements tableHeaders = row.getElementsByTag("tr");
-//            for (Element element : tableHeaders) {
-//                String elementText = element.text();
-//                System.out.print(elementText + " ");
-//            }
-//        }
     }
 }
