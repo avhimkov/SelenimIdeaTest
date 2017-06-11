@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
+
 public class PsrserSistem {
     public static void main(String[] args) throws IOException {
 
@@ -13,5 +14,6 @@ public class PsrserSistem {
             System.out.println("Номер дела" + "\n" + folderNumber + "\n");
             String authCode = doc.select("td:matches(^(\\d{5})$)").first().text();
             System.out.println("Код авторизации" + "\n" + authCode + "\n");
+
     }
 }
