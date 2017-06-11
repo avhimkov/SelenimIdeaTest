@@ -17,7 +17,7 @@ public class CreateUsers {
         System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
         String basedurl = "http://148.251.88.9:8080/mfc_hmao/admin/";
         WebDriver driver = new ChromeDriver();
-        driver.get("http://148.251.88.9:8080/mfc_hmao/admin/");
+        driver.get(basedurl);
         BufferedReader reader1 = new BufferedReader(new FileReader("src/csv/login.csv"));
         while ((lineLogin = reader1.readLine()) != null) {
             String str[] = lineLogin.split(";");

@@ -12,7 +12,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Golosovanie {
-    WebDriver driver = new ChromeDriver();
     @Test
     public void testCase() throws IOException, InterruptedException {
 //      Голосование
@@ -35,10 +34,11 @@ public class Golosovanie {
 //        String text = driver.findElement(By.css("h1")).getText();
 
         String line;
-        BufferedReader reader = new BufferedReader(new FileReader("src/csv/golos.csv"));
         System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
+        String basedurl = ("http://mfc.admhmao.ru/mfctablet/quality.htm");
         WebDriver driver = new ChromeDriver();
-        driver.get("http://mfc.admhmao.ru/mfctablet/quality.htm");
+        driver.get(basedurl);
+        BufferedReader reader = new BufferedReader(new FileReader("src/csv/golos.csv"));
         while ((line = reader.readLine()) != null) {
             String str[] = line.split(";");
             if (str.length > 1) {
