@@ -14,25 +14,33 @@ public class Tenzor {
     public void testCase() throws InterruptedException, IOException {
         String lineLogin;
         System.setProperty("webdriver.chrome.driver", "src/driver/win/x32/chromedriver.exe");
-        String basedurl = "http://gmail.com/";
+        String basedurl = "http://mail.ru/";
         WebDriver driver = new ChromeDriver();
         driver.get(basedurl);
         BufferedReader reader1 = new BufferedReader(new FileReader("src/csv/login.csv"));
         while ((lineLogin = reader1.readLine()) != null) {
             String str[] = lineLogin.split(";");
             if (str.length > 1) {
-                driver.findElement(By.name("login")).clear();
-                driver.findElement(By.name("login")).sendKeys(str[0]);
-                driver.findElement(By.name("password")).clear();
-                driver.findElement(By.name("password")).sendKeys(str[1]);
-                driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
 
-                //Form create user
-                String line;
-                BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("src/csv/UsersAdd.csv"), "windows-1251"));
-                while ((line = reader.readLine()) != null) {
-                    String strUsers[] = line.split(";");
-                    if (strUsers.length > 1) {
+                //mail.ru
+                driver.findElement(By.id("mailbox__login")).clear();
+                driver.findElement(By.id("mailbox__login")).sendKeys(str[0]);
+                driver.findElement(By.id("mailbox__password")).clear();
+                driver.findElement(By.id("mailbox__password")).sendKeys(str[1]);
+                driver.findElement(By.id("mailbox__auth__button")).click();
+
+
+//                driver.findElement(By.name("Login")).clear();
+//                driver.findElement(By.name("Login")).sendKeys(str[0]);
+//                driver.findElement(By.name("Password")).clear();
+//                driver.findElement(By.name("Password")).sendKeys(str[1]);
+//                driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+
+//                String line;
+//                BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("src/csv/UsersAdd.csv"), "windows-1251"));
+//                while ((line = reader.readLine()) != null) {
+//                    String strUsers[] = line.split(";");
+//                    if (strUsers.length > 1) {
 
 //                        driver.get(basedurl + "create.htm?id=11478361@SXFolder&cls=mfcUser&ra=members&ds=default&link=11478361@SXFolder&7ca8a1c17f9e33d2ec6b498540532cfc");
 //                        driver.findElement(By.id("id_surname")).clear();
@@ -68,11 +76,13 @@ public class Tenzor {
 //                            default:
 //                                break;
 //                        }
-                    }
-                }
+//                    }
+//                }
+//            }
+//        }
             }
-        }
-        driver.quit();
-    }
 
+//        driver.quit();
+        }
+    }
 }
