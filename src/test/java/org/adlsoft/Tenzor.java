@@ -14,15 +14,16 @@ public class Tenzor {
     public void testCase() throws InterruptedException, IOException {
         String lineLogin;
         System.setProperty("webdriver.chrome.driver", "driver/win/x32/chromedriver.exe");
-       WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
 
-        BufferedReader reader1 = new BufferedReader(new FileReader("src/csv/login.csv"));
-        while ((lineLogin = reader1.readLine()) != null) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("csv/login.csv"), "windows-1251"));
+        while ((lineLogin = reader.readLine()) != null) {
 
             String str[] = lineLogin.split(";");
             if (str.length > 1) {
-                String basedurl = str[0];
-                driver.get(basedurl);
+                String basedURL = str[0];
+                driver.get(basedURL);
+
                 //mail.ru
                 driver.findElement(By.id("mailbox__login")).clear();
                 driver.findElement(By.id("mailbox__login")).sendKeys(str[1]);
@@ -30,36 +31,6 @@ public class Tenzor {
                 driver.findElement(By.id("mailbox__password")).sendKeys(str[2]);
                 driver.findElement(By.id("mailbox__auth__button")).click();
 
-
-//                driver.findElement(By.name("Login")).clear();
-//                driver.findElement(By.name("Login")).sendKeys(str[0]);
-//                driver.findElement(By.name("Password")).clear();
-//                driver.findElement(By.name("Password")).sendKeys(str[1]);
-//                driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
-
-//                String line;
-//                BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("src/csv/UsersAdd.csv"), "windows-1251"));
-//                while ((line = reader.readLine()) != null) {
-//                    String strUsers[] = line.split(";");
-//                    if (strUsers.length > 1) {
-
-//                        driver.get(basedurl + "create.htm?id=11478361@SXFolder&cls=mfcUser&ra=members&ds=default&link=11478361@SXFolder&7ca8a1c17f9e33d2ec6b498540532cfc");
-//                        driver.findElement(By.id("id_surname")).clear();
-//                        driver.findElement(By.id("id_surname")).sendKeys(strUsers[0]); //Авхимко
-//                        driver.findElement(By.id("id_name")).clear();
-//                        driver.findElement(By.id("id_name")).sendKeys(strUsers[1]); //Дмитрий
-//                        driver.findElement(By.id("id_patronymic")).clear();
-//                        driver.findElement(By.id("id_patronymic")).sendKeys(strUsers[2]); //Леонидович
-//                        driver.findElement(By.id("id_login")).clear();
-//                        driver.findElement(By.id("id_login")).sendKeys(strUsers[3]); //AvhimkovDL
-//                        driver.findElement(By.name("data(password)")).clear();
-//                        driver.findElement(By.name("data(password)")).sendKeys(strUsers[4]); //qwe123qwe
-//                        driver.findElement(By.name("data(repassword)")).clear();
-//                        driver.findElement(By.name("data(repassword)")).sendKeys(strUsers[5]); //qwe123qwe
-//                        new Select(driver.findElement(By.id("id_mfc"))).selectByVisibleText("Муниципальное казенное учреждение \"Многофункциональный центр предоставления государственных и муниципальных услуг г. Лянтор Сургутского района\"");
-//                        driver.findElement(By.id("formSubmit")).click();
-//                        driver.findElement(By.id("title_operator")).click();
-//                        driver.findElement(By.id("title_esia")).click();
 //                        int fe_id = 0;
 //                        switch (fe_id) {
 //                            case 1:
@@ -77,13 +48,9 @@ public class Tenzor {
 //                            default:
 //                                break;
 //                        }
-//                    }
-//                }
-//            }
-//        }
-            }
 
-//        driver.quit();
+            }
         }
+        driver.quit();
     }
 }
